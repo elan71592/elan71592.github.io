@@ -1,34 +1,87 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <title>Elan Kvitko</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+  <!-- <link rel="stylesheet" href="../stylesheets/default.css"> -->
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 </head>
-<body>
-  <main>
-    <h1>Version Control - Git - GitHub</h1>
-    <h4>February 10th, 2016</h4>
+  <body>
+    <header id="navi">
+      <div class="overlay"></div>
 
-    <section>
-      <p>
-        Version Control has a lot of benefits. Imagine working on a project with a partner. Without version control, you'll probably end up having to be in the same room working together. How else will you keep track of everything the both of you are working on? Now imagine a team of people, maybe 5 or 10 or even 20 developers. You wanna be limited to working together all in the same room on one server? Didn't think so. So whats the solution then...version control!!! Alright now you might be asking yourself how would version control be of any help? Well that's where git and github come in :)
-      </p>
-      <p>
-        Git is a very powerful tool used for keeping track of changes. It works by constantly keeping a log of what you do to your files. It's a local repo on your computer that knows what changes you've made to your files and then allows you to push them up to a cloud based repo which would be GitHub. So let's say I have a repo called cats and in that repo I have a file called index.html. If I go in and edit that file on my computer, git knows about it so when I'm done editing it, I can tell git that I would like to commit my changes to the file. This kind of creates a timestamp for that file with a message that I write to keep track of what I did to that file so that the person working on it next will be able to understand what changes I made and where he can continue on. Then I push those changes to GitHub (the cloud based repo) and BADABING BADABOOM! The other members of my team can continue to work on it!
-      </p>
-      <p>
-        You might be wondering, wait! You have git already. Why do you need this cloud based repo thing? You're already keeping track of your files and what you're doing to them. So what's the point? Well the point is simple. I love cats!
-        <br>
-          <center><img src="img/cat.jpg" alt="scary-cat" width="300"></center>
-        <br>
-        HAH! Just kidding. But seriously developers love cats. They're cute and funny so get used to them! And go buy one too, preferably from a shelter!
-        <br>
-        <br>
-        Seriously, GitHub is used to store your code so other team members can pull from it, continue to work on it where you left off, and see the commits you've made to the files. Then they do the same and you can continue to work on the files from there. It's all about version control and it's a beautiful system designed to make life much easier for developers so use it, abuse it, and buy a cat...and a dog while you're at it :)
-      </p>
+      <div class="navigation">
+        <img src="../imgs/trans-logo.png" alt="" class="logo-head">
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
 
-        <!-- copy and paste as many sections as you want to add paragraphs -->
+          <li>
+            <a href="projects.html">My Work</a>
+          </li>
+
+          <li>
+            <a href="blog/index.html">Blog</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="navi-border">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <img src="../imgs/sticky.png" alt="#" class="sticky">
+
+      <section id="blog-content">
+        <h1>Version Control <br><br> Git <br><br> GitHub</h1>
+      <h4>February 10th, 2016</h4>
+        <p>
+          Version Control has a lot of benefits. Imagine working on a project with a partner. Without version control, you'll probably end up having to be in the same room working together. How else will you keep track of everything the both of you are working on? Now imagine a team of people, maybe 5 or 10 or even 20 developers. You wanna be limited to working together all in the same room on one server? Didn't think so. So whats the solution then...version control!!! Alright now you might be asking yourself how would version control be of any help? Well that's where git and github come in :)
+        </p>
+        <br>
+        <br>
+        <p>
+          Git is a very powerful tool used for keeping track of changes. It works by constantly keeping a log of what you do to your files. It's a local repo on your computer that knows what changes you've made to your files and then allows you to push them up to a cloud based repo which would be GitHub. So let's say I have a repo called cats and in that repo I have a file called index.html. If I go in and edit that file on my computer, git knows about it so when I'm done editing it, I can tell git that I would like to commit my changes to the file. This kind of creates a timestamp for that file with a message that I write to keep track of what I did to that file so that the person working on it next will be able to understand what changes I made and where he can continue on. Then I push those changes to GitHub (the cloud based repo) and BADABING BADABOOM! The other members of my team can continue to work on it!
+        </p>
+        <br>
+        <br>
+        <p>
+          You might be wondering, wait! You have git already. Why do you need this cloud based repo thing? You're already keeping track of your files and what you're doing to them. So what's the point? Well the point is simple. I love cats!
+          <br>
+          <br>
+        </p>
+
+        <div id="cat-img">
+          <img src="img/cat.jpg" alt="scary-cat" width="300">
+        </div>
+
+        <p>
+          <br>
+          HAH! Just kidding. But seriously developers love cats. They're cute and funny so get used to them! And go buy one too, preferably from a shelter!
+          <br>
+          Seriously, GitHub is used to store your code so other team members can pull from it, continue to work on it where you left off, and see the commits you've made to the files. Then they do the same and you can continue to work on the files from there. It's all about version control and it's a beautiful system designed to make life much easier for developers so use it, abuse it, and buy a cat...and a dog while you're at it :)
+        </p>
       </section>
     </main>
+
+    <footer>
+      <section class="copyright">
+        <h2>&copy; Copyright, 2016</h2>
+      </section>
+
+      <section id="name">
+        <h2 class="footer-name">// Elan Kvitko</h2>
+      </section>
+
+       <div id="social-container">
+        <a href="#"><img src="../imgs/social-fb-footer.png" alt="" class="fb-footer"></a>
+        <a href="#"><img src="../imgs/social-insta-footer.png" alt="" class="insta-footer"></a>
+        <a href="#"><img src="../imgs/social-linkedin-footer.png" alt="" class="linked-footer"></a>
+        <a href="#"><img src="../imgs/social-twitter-footer.png" alt="" class="twitter-footer"></a>
+      </div>
+    </footer>
   </body>
-  </html>
+</html>
