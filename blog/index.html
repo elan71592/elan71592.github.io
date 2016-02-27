@@ -2,50 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blog</title>
+  <title>Elan Kvitko</title>
+  <link rel="stylesheet" href="../stylesheets/default.css">
+  <link rel="stylesheet" href="../stylesheets/blog-index.css">
 </head>
   <body>
-    <header class="social-elements">
-      <img src="../imgs/social-fb.png" alt="Facebook">
-      <img src="../imgs/social-twitter.png" alt="Twitter">
-      <img src="../imgs/social-linkedin.png" alt="LinkedIn">
-      <img src="../imgs/social-insta.png" alt="Instagram">
+    <header id="main-header">
+
+      <div class="overlay"></div>
+
+      <div class="elan-head"><img src="../imgs/elan-profile.png" alt="" class="profile-pic"></div>
+
     </header>
 
-    <hr>
+    <header id="sub-header">
+      <div id="bar">
 
-    <header class="navi">
-      <span class="insp-quote">"Innovation distinguishes between a leader and a follower" - Steve Jobs</span>
-      <ul>
-        <li>
-          <a href="../index.html">Home</a>
-        </li>
+        <h1>for <b style="color: #42c8f4;">link</b> in <b style="color: #42c8f4;">nav</b>.do {&nbsp;</h1>
+        <a href="../index.html" class="fb">Home / \</a>
+        <a href="#" class="insta">My Work / \</a>
+        <a href="index.html" class="linked">Blog / \</a>
+        <a href="#" class="twitter">Contact Me / \</a>
 
-        <li>
-          <a href="../projects.html">My Work</a>
-        </li>
+        <p class="end-bracket">&nbsp;}</p>
 
-        <li>
-          <a href="index.html">Blog</a>
-        </li>
-
-        <li>
-          <a href="../contact.html">Contact Me</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
-    <hr>
-
-    <main id="blog-entries">
-      <a href="git.html" class="blog-entry">Version Control - GitHub</a>
-      <a href="css-concepts.html" class="blog-entry">Margin, Border, Padding...What's the difference?</a>
-      <a href="#" class="blog-entry">Entry 3</a>
-      <a href="#" class="blog-entry">Entry 4</a>
-      <a href="#" class="blog-entry">Entry 5</a>
-      <a href="#" class="blog-entry">Entry 6</a>
+    <main>
+      <table>
+        <tr>
+          <td><div class="boxes"><a href="git.html" class="main-posts">// Git & Version Control</a></div></td>
+          <td><div class="boxes"><a href="css-concepts.html" class="main-posts">// CSS Concepts</a></div></td>
+          <td><div class="boxes"><a href="" class="main-posts">// Post 3</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="boxes"><a href="" class="main-posts">// Post 4</a></div></td>
+          <td><div class="boxes"><a href="" class="main-posts">// Post 5</a></div></td>
+          <td><div class="boxes"><a href="" class="main-posts">// Post 6</a></div></td>
+        </tr>
+      </table>
     </main>
 
-    <img src="../imgs/down-arrows.png" alt="sliding-arrow" width="30">
+    <footer>
+      <section class="copyright">
+        <h2>&copy; Copyright, 2016</h2>
+      </section>
+
+      <section id="name">
+        <h2>// Elan Kvitko</h2>
+      </section>
+
+      <div id="social-container">
+        <a href="#"><img src="../imgs/social-fb-footer.png" alt="" class="fb-footer"></a>
+        <a href="#"><img src="../imgs/social-insta-footer.png" alt="" class="insta-footer"></a>
+        <a href="#"><img src="../imgs/social-linkedin-footer.png" alt="" class="linked-footer"></a>
+        <a href="#"><img src="../imgs/social-twitter-footer.png" alt="" class="twitter-footer"></a>
+      </div>
+    </footer>
+
   </body>
 </html>
