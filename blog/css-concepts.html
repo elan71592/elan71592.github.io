@@ -3,40 +3,30 @@
 <head>
   <title>Elan Kvitko</title>
   <meta charset="UTF-8">
-  <!-- <link rel="stylesheet" href="../stylesheets/default.css"> -->
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" href="../stylesheets/default.css">
+  <link rel="stylesheet" href="../stylesheets/blog.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="../scripts/modernizr-2.6.1.min.js"></script>
+  <script src="../js/footer-social-all-pages.js"></script>
+  <script src="../js/color.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
 </head>
   <body>
-    <header id="navi">
-      <div class="overlay"></div>
-
-      <div class="navigation">
-        <img src="../imgs/trans-logo.png" alt="" class="logo-head">
-        <ul>
-          <li>
-            <a href="../index.html">Home</a>
-          </li>
-
-          <li>
-            <a href="projects.html">My Work</a>
-          </li>
-
-          <li>
-            <a href="index.html">Blog</a>
-          </li>
-
-          <li>
-            <a href="contact.html" class="navi-border">Contact Me</a>
-          </li>
-        </ul>
-      </div>
+    <header id="sticker">
+      <ul class="navi">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">My Work</a></li>
+        <li><a href="index.html" class="active">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </header>
 
     <main id="main-content">
-      <img src="../imgs/sticky.png" alt="#" class="sticky">
-      <section id="blog-content">
-        <h1>Margin,<br>Border,<br>Padding,<br>What's the <br>difference?</h1>
-      <h4>February 25th, 2016</h4>
+      <section class="title">
+        <h1>Margin, Border, Padding <br>What's the difference?</h1>
+        <h4>February 25th, 2016</h4>
+      </section>
+      <section class="content">
         <p>
           Ok guys. This is one of the most important things you can learn in CSS...scratch that! EVERYTHING you can learn in CSS is the most important thing. It all just comes together but for this post, let's focus on some awesome things like margins, paddings, and borders. Let's begin with margins! Margins live outside of the borders. Essentially, it is the space on the outside of the border. They are the outermost part of an element that you can manipulate. Using margins, you can style the position of an element on the page. So one thing we know for sure, margins are pretty cool guys!
         <br>
@@ -60,20 +50,21 @@
     </main>
 
     <footer>
-      <section class="copyright">
-        <h2>&copy; Copyright, 2016</h2>
-      </section>
-
-      <section id="name">
-        <h2 class="footer-name">// Elan Kvitko</h2>
-      </section>
-
-       <div id="social-container">
-        <a href="#"><img src="../imgs/social-fb-footer.png" alt="" class="fb-footer"></a>
-        <a href="#"><img src="../imgs/social-insta-footer.png" alt="" class="insta-footer"></a>
-        <a href="#"><img src="../imgs/social-linkedin-footer.png" alt="" class="linked-footer"></a>
-        <a href="#"><img src="../imgs/social-twitter-footer.png" alt="" class="twitter-footer"></a>
-      </div>
+        <h3 class="copyright">Copyright &copy</h3>
+        <div class="social-icons">
+          <a href=""><img src="../imgs/social-fb-footer.png" alt="" class="fb-link"></a>
+          <a href=""><img src="../imgs/social-insta-footer.png" alt="" class="insta-link"></a>
+          <a href=""><img src="../imgs/social-linkedin-footer.png" alt="" class="linked-link"></a>
+          <a href=""><img src="../imgs/social-twitter-footer.png" alt="" class="twitter-link"></a>
+        </div>
+        <h3 class="footer-name">// Elan Kvitko</h3>
     </footer>
+
+
+    <script>
+      $(document).ready(function(){
+        $("#sticker").sticky({topSpacing:0});
+      });
+    </script>
   </body>
 </html>
