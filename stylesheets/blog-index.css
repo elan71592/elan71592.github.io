@@ -1,51 +1,24 @@
-header#main-header {
-  height: 200px;
+main table {
+  margin-top: 70px;
 }
-
-header#main-header div.overlay {
-  height: 200px;
-}
-
-div.elan-head {
-  text-align: center;
-}
-
-img.profile-pic {
-  margin-top: 25px;
-  width: 150px;
-}
-
-main {
-  padding-top: 80px;
-}
-
-/*main table tr {
-  padding-right: 50px;
-  padding-bottom: 80px;
-}*/
 
 main table tr td div.boxes {
   width: 250px;
   height: 50px;
-  border: 5px solid #3b5a9a;
+  border: 5px solid #000;
   text-align: center;
   margin-right: 50px;
   margin-bottom: 45px;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 main table tr td div.boxes a.main-posts {
   font: 20px Futura;
-  color: #3b5a9a;
+  color: #000;
   text-decoration: none;
 }
 
 main table tr td div.boxes:hover {
   transition: background-color 0.5s ease;
-  background-color: #42c8f4;
-}
-
-main table tr td div.boxes a.main-posts:hover {
-  transition: color 0.5s ease;
-  color: #fff;
+  background-color: #ff0000;
 }

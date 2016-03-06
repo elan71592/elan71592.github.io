@@ -5,61 +5,55 @@
   <title>Elan Kvitko</title>
   <link rel="stylesheet" href="../stylesheets/default.css">
   <link rel="stylesheet" href="../stylesheets/blog-index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="../scripts/modernizr-2.6.1.min.js"></script>
+  <script src="../js/footer-social-all-pages.js"></script>
+  <script src="../js/color.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
 </head>
   <body>
-    <header id="main-header">
+    <header class="bg"></header>
 
-      <div class="overlay"></div>
-
-      <div class="elan-head"><img src="../imgs/elan-profile.png" alt="" class="profile-pic"></div>
-
-    </header>
-
-    <header id="sub-header">
-      <div id="bar">
-
-        <h1>for <b style="color: #42c8f4;">link</b> in <b style="color: #42c8f4;">nav</b>.do {&nbsp;</h1>
-        <a href="../index.html" class="fb">Home / \</a>
-        <a href="#" class="insta">My Work / \</a>
-        <a href="index.html" class="linked">Blog / \</a>
-        <a href="#" class="twitter">Contact Me / \</a>
-
-        <p class="end-bracket">&nbsp;}</p>
-
-      </div>
+    <header id="sticker">
+      <ul class="navi">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">My Work</a></li>
+        <li><a href="index.html" class="active">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </header>
 
     <main>
       <table>
         <tr>
-          <td><div class="boxes"><a href="git.html" class="main-posts">// Git & Version Control</a></div></td>
-          <td><div class="boxes"><a href="css-concepts.html" class="main-posts">// CSS Concepts</a></div></td>
-          <td><div class="boxes"><a href="" class="main-posts">// Post 3</a></div></td>
+          <td class="entry1"><div class="boxes"><a href="git.html" class="main-posts entry-1">// Git & Version Control</a></div></td>
+          <td class="entry2"><div class="boxes"><a href="css-concepts.html" class="main-posts entry-2">// CSS Concepts</a></div></td>
+          <td class="entry3"><div class="boxes"><a href="" class="main-posts entry-3">// Post 3</a></div></td>
         </tr>
         <tr>
-          <td><div class="boxes"><a href="" class="main-posts">// Post 4</a></div></td>
-          <td><div class="boxes"><a href="" class="main-posts">// Post 5</a></div></td>
-          <td><div class="boxes"><a href="" class="main-posts">// Post 6</a></div></td>
+          <td class="entry4"><div class="boxes"><a href="" class="main-posts entry-4">// Post 4</a></div></td>
+          <td class="entry5"><div class="boxes"><a href="" class="main-posts entry-5">// Post 5</a></div></td>
+          <td class="entry6"><div class="boxes"><a href="" class="main-posts entry-6">// Post 6</a></div></td>
         </tr>
       </table>
     </main>
 
     <footer>
-      <section class="copyright">
-        <h2>&copy; Copyright, 2016</h2>
-      </section>
+    <h3 class="copyright">Copyright &copy</h3>
+    <div class="social-icons">
+      <a href=""><img src="../imgs/social-fb-footer.png" alt="" class="fb-link"></a>
+      <a href=""><img src="../imgs/social-insta-footer.png" alt="" class="insta-link"></a>
+      <a href=""><img src="../imgs/social-linkedin-footer.png" alt="" class="linked-link"></a>
+      <a href=""><img src="../imgs/social-twitter-footer.png" alt="" class="twitter-link"></a>
+    </div>
+    <h3 class="footer-name">// Elan Kvitko</h3>
+  </footer>
 
-      <section id="name">
-        <h2>// Elan Kvitko</h2>
-      </section>
 
-      <div id="social-container">
-        <a href="#"><img src="../imgs/social-fb-footer.png" alt="" class="fb-footer"></a>
-        <a href="#"><img src="../imgs/social-insta-footer.png" alt="" class="insta-footer"></a>
-        <a href="#"><img src="../imgs/social-linkedin-footer.png" alt="" class="linked-footer"></a>
-        <a href="#"><img src="../imgs/social-twitter-footer.png" alt="" class="twitter-footer"></a>
-      </div>
-    </footer>
-
+    <script>
+      $(document).ready(function(){
+        $("#sticker").sticky({topSpacing:0});
+      });
+    </script>
   </body>
 </html>

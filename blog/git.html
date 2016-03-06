@@ -3,41 +3,30 @@
 <head>
   <title>Elan Kvitko</title>
   <meta charset="UTF-8">
-  <!-- <link rel="stylesheet" href="../stylesheets/default.css"> -->
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" href="../stylesheets/default.css">
+  <link rel="stylesheet" href="../stylesheets/blog.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="../scripts/modernizr-2.6.1.min.js"></script>
+  <script src="../js/footer-social-all-pages.js"></script>
+  <script src="../js/color.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
 </head>
   <body>
-    <header id="navi">
-      <div class="overlay"></div>
-
-      <div class="navigation">
-        <img src="../imgs/trans-logo.png" alt="" class="logo-head">
-        <ul>
-          <li>
-            <a href="../index.html">Home</a>
-          </li>
-
-          <li>
-            <a href="projects.html">My Work</a>
-          </li>
-
-          <li>
-            <a href="index.html">Blog</a>
-          </li>
-
-          <li>
-            <a href="contact.html" class="navi-border">Contact Me</a>
-          </li>
-        </ul>
-      </div>
+    <header id="sticker">
+      <ul class="navi">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">My Work</a></li>
+        <li><a href="index.html" class="active">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </header>
 
     <main id="main-content">
-      <img src="../imgs/sticky.png" alt="#" class="sticky">
-
-      <section id="blog-content">
-        <h1>Version Control <br><br> Git <br><br> GitHub</h1>
-      <h4>February 10th, 2016</h4>
+      <section class="title">
+        <h1>Version Control - Git - GitHub</h1>
+        <h4>February 10th, 2016</h4>
+      </section>
+      <section class="content">
         <p>
           Version Control has a lot of benefits. Imagine working on a project with a partner. Without version control, you'll probably end up having to be in the same room working together. How else will you keep track of everything the both of you are working on? Now imagine a team of people, maybe 5 or 10 or even 20 developers. You wanna be limited to working together all in the same room on one server? Didn't think so. So whats the solution then...version control!!! Alright now you might be asking yourself how would version control be of any help? Well that's where git and github come in :)
         </p>
@@ -68,20 +57,20 @@
     </main>
 
     <footer>
-      <section class="copyright">
-        <h2>&copy; Copyright, 2016</h2>
-      </section>
-
-      <section id="name">
-        <h2 class="footer-name">// Elan Kvitko</h2>
-      </section>
-
-       <div id="social-container">
-        <a href="#"><img src="../imgs/social-fb-footer.png" alt="" class="fb-footer"></a>
-        <a href="#"><img src="../imgs/social-insta-footer.png" alt="" class="insta-footer"></a>
-        <a href="#"><img src="../imgs/social-linkedin-footer.png" alt="" class="linked-footer"></a>
-        <a href="#"><img src="../imgs/social-twitter-footer.png" alt="" class="twitter-footer"></a>
-      </div>
+        <h3 class="copyright">Copyright &copy</h3>
+        <div class="social-icons">
+          <a href=""><img src="../imgs/social-fb-footer.png" alt="" class="fb-link"></a>
+          <a href=""><img src="../imgs/social-insta-footer.png" alt="" class="insta-link"></a>
+          <a href=""><img src="../imgs/social-linkedin-footer.png" alt="" class="linked-link"></a>
+          <a href=""><img src="../imgs/social-twitter-footer.png" alt="" class="twitter-link"></a>
+        </div>
+        <h3 class="footer-name">// Elan Kvitko</h3>
     </footer>
+
+    <script>
+      $(document).ready(function(){
+        $("#sticker").sticky({topSpacing:0});
+      });
+    </script>
   </body>
 </html>

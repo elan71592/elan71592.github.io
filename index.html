@@ -4,85 +4,67 @@
   <meta charset="UTF-8">
   <title>Elan Kvitko</title>
   <link rel="stylesheet" href="stylesheets/default.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="scripts/modernizr-2.6.1.min.js"></script>
+  <script src="js/footer-social.js"></script>
+  <script src="js/color.js"></script>
+  <script src="garand-sticky/jquery.sticky.js"></script>
 </head>
-  <body>
-    <header id="main-header">
+<body>
+  <header class="bg">
 
-      <div class="overlay"></div>
+  </header>
 
-      <div class="navigation">
-        <img src="imgs/trans-logo.png" alt="" class="logo-header">
+  <header id="sticker">
+    <ul class="navi">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#">My Work</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
 
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
+  <main id="me">
+    <img src="imgs/elan.jpg" alt="" class="elan">
 
-          <li>
-            <a href="projects.html">My Work</a>
-          </li>
+    <div id="info">
+      <div class="dark-box">
+        <p class="name">Elan Kvitko</p>
+        <p class="pos">developer</p>
 
-          <li>
-            <a href="blog/index.html">Blog</a>
-          </li>
+        <section class="about-text">
+          <h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, libero, error! Necessitatibus quo excepturi illo natus quidem dignissimos, maiores velit, eveniet cumque, rem autem! Animi asperiores itaque doloribus suscipit eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a, natus, ex amet sit sunt culpa possimus non dicta consequuntur nesciunt id quos, sed, eveniet quisquam ratione tempora aut odio.
+          </h3>
+        </section>
 
-          <li>
-            <a href="contact.html" class="link-border">Contact Me</a>
-          </li>
-        </ul>
-
-        <div class="header-button">
-          <a href="#">ABOUT ME</a>
-        </div>
-
+        <img src="imgs/logos.png" alt="" class="lang-logo">
       </div>
-    </header>
+    </div>
+  </main>
 
-    <header id="sub-header">
-      <div id="bar">
+  <h1 class="blog-home-head">// Latest From <span>Blog</span></h1>
 
-        <h1>Connect With Me.do {&nbsp;</h1>
-        <a href="#" class="fb">Facebook / \</a>
-        <a href="#" class="insta">Instagram / \</a>
-        <a href="#" class="linked">LinkedIn / \</a>
-        <a href="#" class="twitter">Twitter / \</a>
+  <div id="latest">
+    <img src="imgs/css-logo.png" alt="" class="css-logo">
+    <a href="#" class="entry-title">CSS CONCEPTS</a>
+  </div>
 
-        <p class="end-bracket">&nbsp;}</p>
+  <footer>
+    <h3 class="copyright">Copyright &copy</h3>
+    <div class="social-icons">
+      <a href=""><img src="imgs/social-fb-footer.png" alt="" class="fb-link"></a>
+      <a href=""><img src="imgs/social-insta-footer.png" alt="" class="insta-link"></a>
+      <a href=""><img src="imgs/social-linkedin-footer.png" alt="" class="linked-link"></a>
+      <a href=""><img src="imgs/social-twitter-footer.png" alt="" class="twitter-link"></a>
+    </div>
+    <h3 class="footer-name">// Elan Kvitko</h3>
+  </footer>
 
-      </div>
-    </header>
-
-    <main>
-      <aside>
-        <img src="imgs/elan.jpg" alt="" class="elan-profile">
-      </aside>
-
-      <section>
-        <h2>Elan Kvitko</h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, libero, error! Necessitatibus quo excepturi illo natus quidem dignissimos, maiores velit, eveniet cumque, rem autem! Animi asperiores itaque doloribus suscipit eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a, natus, ex amet sit sunt culpa possimus non dicta consequuntur nesciunt id quos, sed, eveniet quisquam ratione tempora aut odio.
-        </p>
-      </section>
-
-      <img src="imgs/logos.png" alt="#" class="language-logos">
-    </main>
-
-    <footer>
-      <section class="copyright">
-        <h2>&copy; Copyright, 2016</h2>
-      </section>
-
-      <section id="name">
-        <h2>// Elan Kvitko</h2>
-      </section>
-
-      <div id="social-container">
-        <a href="#"><img src="imgs/social-fb-footer.png" alt="" class="fb-footer"></a>
-        <a href="#"><img src="imgs/social-insta-footer.png" alt="" class="insta-footer"></a>
-        <a href="#"><img src="imgs/social-linkedin-footer.png" alt="" class="linked-footer"></a>
-        <a href="#"><img src="imgs/social-twitter-footer.png" alt="" class="twitter-footer"></a>
-      </div>
-    </footer>
-
-  </body>
+  <script>
+    $(document).ready(function(){
+      $("#sticker").sticky({topSpacing:0});
+    });
+  </script>
+</body>
 </html>
