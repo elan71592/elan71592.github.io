@@ -23,10 +23,33 @@
 
     <main id="main-content">
       <section class="title">
-        <h1>Version Control - Git - GitHub</h1>
+        <h3>Version Control - Git - GitHub</h3>
         <h4>February 10th, 2016</h4>
       </section>
-      <section class="content">
+
+      <div class="other-posts">
+        <h1>Check Out My Other Posts!</h1>
+        <table>
+            <tr class="row-1">
+              <td>
+                <ul>
+                  <li><a href="git.html" class="active">// Git & Version Control</a></li>
+                  <li><a href="css-concepts.html">// CSS Concepts</a></li>
+                  <li><a href="arrays-hashes.html">// Arrays & Hashes</a></li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><a href="">// TBD Post 4</a></li>
+                  <li><a href="">// TBD Post 5</a></li>
+                  <li><a href="">// TBD Post 6</a></li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+      <div class="content">
         <p>
           Version Control has a lot of benefits. Imagine working on a project with a partner. Without version control, you'll probably end up having to be in the same room working together. How else will you keep track of everything the both of you are working on? Now imagine a team of people, maybe 5 or 10 or even 20 developers. You wanna be limited to working together all in the same room on one server? Didn't think so. So whats the solution then...version control!!! Alright now you might be asking yourself how would version control be of any help? Well that's where git and github come in :)
         </p>
@@ -53,11 +76,17 @@
           <br>
           Seriously, GitHub is used to store your code so other team members can pull from it, continue to work on it where you left off, and see the commits you've made to the files. Then they do the same and you can continue to work on the files from there. It's all about version control and it's a beautiful system designed to make life much easier for developers so use it, abuse it, and buy a cat...and a dog while you're at it :)
         </p>
-      </section>
+      </div>
+      <aside id="sidebar">
+        <h3 class="maintenance">
+          Sidebar Under Construction
+          Should be Completed Soon
+        </h3>
+      </aside>
     </main>
 
     <footer>
-        <h3 class="copyright">Copyright &copy</h3>
+        <h3 class="copyright">Copyright &copy;</h3>
         <div class="social-icons">
           <a href=""><img src="../imgs/social-fb-footer.png" alt="" class="fb-link"></a>
           <a href=""><img src="../imgs/social-insta-footer.png" alt="" class="insta-link"></a>
@@ -70,6 +99,7 @@
     <script>
       $(document).ready(function(){
         $("#sticker").sticky({topSpacing:0});
+        $("#sidebar").sticky({topSpacing:0});
       });
     </script>
   </body>

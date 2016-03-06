@@ -23,8 +23,8 @@
 
     <main id="main-content">
       <section class="title">
-        <h3>Margin, Border, Padding <br>What's the difference?</h3>
-        <h4>February 25th, 2016</h4>
+        <h3>Arrays - Hashes <br>Faceoff!</h3>
+        <h4>March 6th, 2016</h4>
       </section>
 
       <div class="other-posts">
@@ -34,8 +34,8 @@
               <td>
                 <ul>
                   <li><a href="git.html">// Git & Version Control</a></li>
-                  <li><a href="css-concepts.html" class="active">// CSS Concepts</a></li>
-                  <li><a href="arrays-hashes.html">// Arrays & Hashes</a></li>
+                  <li><a href="css-concepts.html">// CSS Concepts</a></li>
+                  <li><a href="arrays-hashes.html" class="active">// Arrays & Hashes</a></li>
                 </ul>
               </td>
               <td>
@@ -50,23 +50,25 @@
         </div>
       <div class="content">
         <p>
-          Ok guys. This is one of the most important things you can learn in CSS...scratch that! EVERYTHING you can learn in CSS is the most important thing. It all just comes together but for this post, let's focus on some awesome things like margins, paddings, and borders. Let's begin with margins! Margins live outside of the borders. Essentially, it is the space on the outside of the border. They are the outermost part of an element that you can manipulate. Using margins, you can style the position of an element on the page. So one thing we know for sure, margins are pretty cool guys!
-        <br>
-        <br>
-        <p>
-          Moving on to borders. Borders surround the content and lay between the content and margins. Borders serve a lot of different purposes. Stylistically, they are used extremely often and I found them to be absolutely wonderful to use when working with div elements.
-        </p>
-        <br>
-        <br>
-        <p>
-          Soooooo, this brings us to our last part. The padding! Padding lives between the content and the borders. It is basically the space that is between the two. This is extremely important because sometimes you want to use padding over margin. The image below will show a great example of the 3 and how they work.
-          <br>
-          <br>
-        </p>
+          names = Array.new<br>
+          names = []<br>
+          names = ["Elan"]<br><br>
 
-        <div id="cat-img">
-          <img src="img/boxdim.gif" alt="#">
-        </div>
+          See that up there? Those are just a few ways of making an array. It is really simple. Naming your array is the same as making a variable equal to your array. Now what is an array? An array is a collection of objects whether they be:<br><br> strings: "Elan", <br>fixed numbers/integers: 1, 2, 3,<br> float numbers/decimals: 1.0, 2.5, 3.2,<br> arrays: ["elan", "kvitko"], and more. <br><br>
+
+          person = Hash.new<br>
+
+          person = {}<br>
+
+          person = {<br>
+          :name => "elan",<br>
+          :city => "nyc",<br>
+          :favorite_food => "pizza"<br>
+          :favorite_number => 15<br>
+          }<br><br>
+
+          Those things up there. They're what we call hashes in Ruby. A hash is another way of storing data except a hash works kind of like a dictionary. You see how I create a hash called person and if I wanted to represent myself as an object along with all of my attributes, I would use a hash. When I say a hash works like a dictionary, all it means is that there is a key which is the same as a word in a dictionary, and then you see the little hash rocket (what we call the equal sign with the greater than symbol. it's a cool word and pure genius!), which assigns whatever you put on the right of it the value which acts like a definition.
+        </p>
       </div>
       <aside id="sidebar">
         <h3 class="maintenance">

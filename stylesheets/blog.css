@@ -1,13 +1,74 @@
-main#main-content {
+@font-face {
+  font-family: Rain;
+  src: url(../fonts/AYearWithoutRain.ttf);
+}
+
+
+main#main-content section.title{
+  width: 50%;
+  font: 40px Rain;
+  color: #000;
+  text-align: justify;
+  margin-left: 30px;
+  float: left;
+}
+
+main#main-content div.content {
+  clear: both;
+  margin-top: 10px;
+  width: 50%;
+  text-align: justify;
+  float: left;
+  padding: 40px;
+  font: 18px Rain;
+  line-height: 30px;
+  border-right: 1px solid #000;
+  font-weight: 300;
+}
+
+div#cat-img {
   text-align: center;
 }
 
-main#main-content section.title{
-  font: 30px Futura;
-  color: #000;
+aside#sidebar {
+  /*width: 300px;*/
+  float: right;
+  margin-right: 50px;
+  margin-top: 50px;
+  /*text-align: center;*/
 }
 
-main#main-content section.content {
-  margin-top: 50px;
-  width: 80%;
+div.other-posts {
+  font: 20px Rain;
+  float: right;
+}
+
+div.other-posts h1 {
+  padding-left: 20px;
+}
+
+table {
+  padding-right: 80px;
+}
+
+table tr.row-1 td {
+  float: left;
+  padding-left: 60px;
+}
+
+table tr.row-1 td li {
+  list-style: none;
+}
+
+table tr.row-1 td li a {
+  float: left;
+  text-decoration: none;
+  font: 20px Rain;
+  color: #000;
+  line-height: 50px;
+}
+
+table tr.row-1 td li a:hover {
+  transition: color 0.5s ease;
+  color: #ff0000;
 }
