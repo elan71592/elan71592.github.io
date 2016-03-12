@@ -23,4 +23,10 @@ $(document).ready(function() {
   $('.twitter-link').mouseleave(function() {
     $('.twitter-link').attr('src', '../imgs/social-twitter-footer.png')
   });
+  $('.git-link').mouseenter(function() {
+    $('.git-link').attr('src', '../imgs/git-red.png')
+  });
+  $('.git-link').mouseleave(function() {
+    $('.git-link').attr('src', '../imgs/git.png')
+  });
 });
