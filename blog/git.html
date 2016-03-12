@@ -78,10 +78,30 @@
         </p>
       </div>
       <aside id="sidebar">
-        <h3 class="maintenance">
-          Sidebar Under Construction
-          Should be Completed Soon
-        </h3>
+        <h3>Get In Touch!</h3>
+        <div id="contact-form">
+          <h2>Get In Touch!</h2>
+          <form action="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="" placeholder="John Doe" required="required" autofocus="autofocus"/>
+            <br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required="required" />
+            <br>
+            <label for="telephone">Telephone: </label>
+            <input type="tel" id="telephone" name="telephone" value="" />
+            <br>
+            <label for="enquiry">Enquiry: </label>
+            <select id="enquiry" name="enquiry">
+                <option value="general">General</option>
+                <option value="sales">Hiring Opportunity</option>
+            </select>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea>
+            <input type="submit" value="Submit!" id="submit-button" />
+          </form>
+        </div>
       </aside>
     </main>
 

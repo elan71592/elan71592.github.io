@@ -3,6 +3,11 @@
   src: url(../fonts/AYearWithoutRain.ttf);
 }
 
+@font-face {
+  font-family: Futura;
+  src: url(../fonts/FuturaExtended.ttf);
+}
+
 
 main#main-content section.title{
   width: 50%;
@@ -31,11 +36,70 @@ div#cat-img {
 }
 
 aside#sidebar {
-  /*width: 300px;*/
   float: right;
+}
+
+aside#sidebar h3 {
+  visibility: hidden;
+}
+
+aside#sidebar h2 {
+  font: 30px Futura;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+aside#sidebar div#contact-form {
+  background-color:#F2F7F9;
+  width:415px;
+  padding:10px;
+  border: 6px solid #8FB5C1;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  /*position:relative;*/
   margin-right: 50px;
   margin-top: 50px;
   /*text-align: center;*/
+}
+
+#contact-form textarea {
+    height:100px;
+    resize: none;
+}
+
+#contact-form #submit-button {
+    width: 100%;
+    background-color:#333;
+    color:#FFF;
+    border:none;
+    margin-bottom:0px;
+    margin-right:60px;
+    background-color:#8FB5C1;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#contact-form #submit-button:hover {
+    transition: background-color 0.5s ease;
+    background-color: #A6CFDD;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label {
+    font-size:15px;
+    margin-bottom:2px;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    width:380px;
+    border: 1px solid #CEE1E8;
+    margin-bottom:20px;
+    padding:4px;
 }
 
 div.other-posts {
