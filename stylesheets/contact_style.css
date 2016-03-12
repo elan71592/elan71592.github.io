@@ -1,0 +1,116 @@
+main#contact {
+  margin-top: 50px;
+}
+
+main#contact h3 {
+  text-align: center;
+  font: 50px Futura;
+}
+
+main#contact div#contact-form {
+  float: left;
+  background-color:#F2F7F9;
+  width:480px;
+  padding:10px;
+  border: 6px solid #8FB5C1;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+main#contact div#contact-form h4 {
+  text-align: center;
+  font: 20px Futura;
+  padding-bottom: 20px;
+}
+
+#contact-form textarea {
+    height:100px;
+    margin-top: 5px;
+    resize: none;
+}
+
+#contact-form #submit-button {
+    width: 100%;
+    background-color:#333;
+    color:#FFF;
+    border:none;
+    margin-bottom:0px;
+    margin-right:60px;
+    background-color:#8FB5C1;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#contact-form #submit-button:hover {
+    transition: background-color 0.5s ease;
+    background-color: #A6CFDD;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label {
+    font: 24px Futura;
+    margin-bottom:2px;
+    float: left;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label placeholder {
+    font: 14px Futura;
+    margin-bottom:2px;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    clear: left;
+    width:470px;
+    border: 1px solid #CEE1E8;
+    margin-bottom:20px;
+    padding:4px;
+}
+
+#map {
+  width: 100%;
+  height: 465px;
+}
+
+#call {
+  margin-top: 20px;
+  float: left;
+  margin-left: 100px;
+  border-left: 2px solid #000;
+}
+
+#call img.phone-img {
+  float: left;
+  margin-left: 50px;
+  width: 150px;
+}
+
+p.info {
+  font: 24px Futura;
+  float: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  line-height: 40px;
+}
+
+p.info span {
+  margin-left: -150px;
+}
+
+div.imgs {
+  margin-left: 80px;
+}
+
+img.social-contact-page {
+  width: 40px;
+  padding-right: 20px;
+}

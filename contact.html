@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elan Kvitko</title>
+  <link rel="stylesheet" href="stylesheets/default.css">
+  <link rel="stylesheet" href="stylesheets/contact_style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="scripts/modernizr-2.6.1.min.js"></script>
+  <script src="js/footer-social.js"></script>
+  <script src="js/color.js"></script>
+  <script src="garand-sticky/jquery.sticky.js"></script>
+</head>
+<body>
+  <div id="map"></div>
+
+  <header id="sticker">
+    <ul class="navi">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">My Work</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="#" class="active">Contact</a></li>
+    </ul>
+  </header>
+
+  <main id="contact">
+    <h3>Let's Talk</h3>
+    <div id="contact-form">
+      <h4>Send Me A Message</h4>
+      <form action="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="" placeholder="John Doe">
+
+        <label for="name">Email:</label>
+        <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com">
+
+        <label for="name">Phone:</label>
+        <input type="tel" id="phone" name="phone" value="">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea>
+        <input type="submit" value="Submit!" id="submit-button" />
+      </form>
+    </div>
+    <div id="call">
+      <img src="imgs/phone.png" alt="" class="phone-img">
+      <p class="info">
+        Tel. (212) 997-0042<br>Cell. (347) 607-7492<br>Fax. (212) 997-0037
+        <br><br>
+        <span class="span-email">Email Me: elan@idknyc.com</span>
+      </p>
+      <div class="imgs">
+        <a href="http://github.com/elan71592"><img src="imgs/git-red.png" alt="" class="social-contact-page"></a>
+        <a href=""><img src="imgs/fb-red.png" alt="" class="social-contact-page"></a>
+        <a href=""><img src="imgs/insta-red.png" alt="" class="social-contact-page"></a>
+        <a href=""><img src="imgs/linkedin-red.png" alt="" class="social-contact-page"></a>
+        <a href=""><img src="imgs/twitter-red.png" alt="" class="social-contact-page"></a>
+      </div>
+      <p><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+    </div>
+  </main>
+
+  <h1 class="blog-home-head">// Latest From <span>Blog</span></h1>
+
+  <div id="latest">
+    <img src="imgs/css-logo.png" alt="" class="css-logo">
+    <a href="blog/css-concepts.html" class="entry-title">CSS CONCEPTS</a>
+  </div>
+
+  <footer>
+    <h3 class="copyright">Copyright &copy</h3>
+    <div class="social-icons">
+      <a href=""><img src="imgs/social-fb-footer.png" alt="" class="fb-link"></a>
+      <a href=""><img src="imgs/social-insta-footer.png" alt="" class="insta-link"></a>
+      <a href=""><img src="imgs/social-linkedin-footer.png" alt="" class="linked-link"></a>
+      <a href=""><img src="imgs/social-twitter-footer.png" alt="" class="twitter-link"></a>
+      <a href="http://github.com/elan71592"><img src="imgs/git.png" alt="" class="git-link"></a>
+    </div>
+    <h3 class="footer-name">// Elan Kvitko</h3>
+  </footer>
+
+  <script>
+    $(document).ready(function(){
+      $("#sticker").sticky({topSpacing:0});
+    });
+  </script>
+  <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var myLatLng = {lat: 40.755452, lng: -73.990359};
+        var map = new google.maps.Map(mapDiv, {
+          center: myLatLng,
+          zoom: 17
+        });
+        var contentString = '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h3 id="firstHeading" class="firstHeading">257 West 39th St.</h3>'+
+          '<h4 id="secondHeading" class="secondHeading">16th Floor</h4>'+
+          '<div id="bodyContent">'+
+          '<p>New York, NY 10018</p>'+
+          '</div>'+
+          '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+          map: map,
+          draggable: true,
+          animation: google.maps.Animation.DROP,
+          position: myLatLng,
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+        marker.addListener('click', toggleBounce);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+</body>
+</html>
