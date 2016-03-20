@@ -3,69 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <title>Elan Kvitko</title>
-  <link rel="stylesheet" href="stylesheets/default.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-  <script src="scripts/modernizr-2.6.1.min.js"></script>
-  <script src="js/footer-social.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Jura:400,500,600|Rubik:400,700|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="jquery.bxslider/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="materialize/css/materialize.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+ <script src="js/color.js"></script>
   <script src="js/color.js"></script>
   <script src="garand-sticky/jquery.sticky.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
+  <script src="jquery.bxslider/jquery.bxslider.min.js"></script>
 </head>
 <body>
-  <header class="bg">
+  <header>
+    <nav id="nav-wrapper">
+      <h3><span>//</span>elan kvitko</h3>
+      <ul class="nav">
+        <li><a href="index.html" class="active">/Home</a></li>
+        <li><a href="#">/About Me</a></li>
+        <li><a href="#">/My Work</a></li>
+        <li><a href="#">/Blog</a></li>
+        <li><a href="#">/Contact</a></li>
+      </ul>
+    </nav>
 
-  </header>
-
-  <header id="sticker">
-    <ul class="navi">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="#">My Work</a></li>
-      <li><a href="blog/index.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </header>
-
-  <main id="me">
-    <img src="imgs/elan.jpg" alt="" class="elan">
-
-    <div id="info">
-      <div class="dark-box">
-        <p class="name">Elan Kvitko</p>
-        <p class="pos">developer</p>
-
-        <section class="about-text">
-          <h3>
-            Hey there :) Nice of you to stumble upon my page. For whatever reason you are here, I am honored, humbled, and hope to give you some good insight as to who I am as a person. My name is Elan David Kvitko and I was born in Brooklyn, NY. I am a 6 Foot 4 Inch tall red-head with green eyes that loves to code more than anything. When I am not coding or learning more on it, I enjoy hiking, traveling, swimming, rock climbing, meditating, playing a nice game of billiards, or a mind rattling game of chess. I have travelled all over the world, volunteering in different countries for people less fortunate and always take the opportunity to do so if I can. My favorite place in the world though is Los Angeles and so I am determined to do what I love most in the city I love most. Currently I am located in Manhattan but if all goes well and life grants me my biggest wish, I will soon be working in LA. Never will I forget however, the city that raised me and the wonderful opportunities that life has given me growing up in such a culturally diverse melting pot. I will never forget the great experiences I had here nor the beautiful people that make NYC what it is. Oh, and in case anyone is looking for a cheat meal, my favorite place in the city here is called Creperie NYC. They are located at 112 MacDougal St. Enjoy!
-          </h3>
-        </section>
-
-        <img src="imgs/logos.png" alt="" class="lang-logo">
-      </div>
+    <div class="header-content">
+      <h3>Developer</h3>
+      <p class="dev-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni molestias quasi libero deserunt, reiciendis cupiditate obcaecati accusantium repudiandae placeat est quam odio nihil sint dicta, molestiae, id aut. Optio, tenetur!</p>
     </div>
-  </main>
+  </header>
 
-  <h1 class="blog-home-head">// Latest From <span>Blog</span></h1>
-
-  <div id="latest">
-    <img src="imgs/css-logo.png" alt="" class="css-logo">
-    <a href="blog/css-concepts.html" class="entry-title">CSS CONCEPTS</a>
+  <div class="resume-download">
+    <h3>feel free to take a look at my resume</h3>
+    <a href="#" id="download">Download Now!</a>
   </div>
 
+  <div class="parallax-container one">
+    <div class="parallax"><img src="imgs/elan-pic2.jpg" alt=""></div>
+  </div>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <div class="p-center">
+      <p>Hey there :) Nice of you to stumble upon my page. For whatever reason you are here, I am honored, humbled, and hope to give you some good insight as to who I am as a person. My name is Elan David Kvitko and I was born in Brooklyn, NY. I am a 6 Foot 4 Inch tall red-head with green eyes that loves to code more than anything. When I am not coding or learning more on it, I enjoy hiking, traveling, swimming, rock climbing, meditating, playing a nice game of billiards, or a mind rattling game of chess. I have travelled all over the world, volunteering in different countries for people less fortunate and always take the opportunity to do so if I can. My favorite place in the world though is Los Angeles and so I am determined to do what I love most in the city I love most. Currently I am located in Manhattan but if all goes well and life grants me my biggest wish, I will soon be working in LA. Never will I forget however, the city that raised me and the wonderful opportunities that life has given me growing up in such a culturally diverse melting pot. I will never forget the great experiences I had here nor the beautiful people that make NYC what it is. Oh, and in case anyone is looking for a cheat meal, my favorite place in the city here is called Creperie NYC. They are located at 112 MacDougal St. Enjoy!</p>
+    </div>
+  </section>
+
+  <div class="parallax-container two">
+    <div class="parallax"><img src="imgs/my-work.jpg" alt=""></div>
+    <h1 class="my-work">MY WORK</h1>
+  </div>
+
+  <section id="my-work-page">
+    <h3>UNDER CONSTRUCTION</h3>
+    <img src="imgs/stewie.png" alt="">
+  </section>
+
+  <div class="parallax-container three">
+    <div class="parallax"><img src="imgs/blog.jpg" alt=""></div>
+    <h1 class="blog">BLOG</h1>
+  </div>
+
+  <section id="blog-page">
+    <div id="section1">
+      <h3>HERE'S THE LATEST <BR>FROM MY <BR>BLOG</h3>
+    </div>
+
+    <div id="section2">
+      <ul class="bxslider">
+        <li><a href=""><img src="imgs/git-blog.jpg" alt=""/></a></li>
+        <li><a href=""><img src="imgs/css-pos-blog.jpg" alt=""/></a></li>
+        <li><a href=""><img src="imgs/arrays-hashes-blog.jpg" alt=""/></a></li>
+        <li><a href=""><img src="imgs/enumerable-blog.jpg" alt=""/></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="posts">
+      <h3 class="see-all-posts">Check Out All My Posts <a href="#">Here!</a></h3>
+  </div>
+
+  <div class="parallax-container four">
+    <div class="parallax"><img src="imgs/contact.jpg" alt=""></div>
+  </div>
+
+  <div id="map"></div>
+  <div class="map-overlay"></div>
+
+  <section id="contact-page">
+    <h3 class="email">Email Me</h3>
+    <div id="contact-form">
+      <form action="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" value="" placeholder="John Doe">
+
+          <label for="name">Email:</label>
+          <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com">
+
+          <label for="name">Phone:</label>
+          <input type="tel" id="phone" name="phone" value="" placeholder="(123) 456-7890">
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea>
+          <input type="submit" value="Submit!" id="submit-button" />
+      </form>
+    </div>
+
+    <div class="call">
+      <h3>you can call me too - (347) 607 - 7492</h3>
+    </div>
+
+  </section>
+
   <footer>
-    <h3 class="copyright">Copyright &copy</h3>
+    <h3 class="copyright">Copyright, 2016 &copy;</h3>
+
     <div class="social-icons">
       <a href=""><img src="imgs/social-fb-footer.png" alt="" class="fb-link"></a>
       <a href=""><img src="imgs/social-insta-footer.png" alt="" class="insta-link"></a>
-      <a href=""><img src="imgs/social-linkedin-footer.png" alt="" class="linked-link"></a>
-      <a href=""><img src="imgs/social-twitter-footer.png" alt="" class="twitter-link"></a>
-      <a href="http://github.com/elan71592"><img src="imgs/git.png" alt="" class="git-link"></a>
+      <a href=""><img src="imgs/social-linkedin-footer.png" alt="" class="linked"></a>
+      <a href=""><img src="imgs/social-twitter-footer.png" alt="" class="twitter"></a>
+      <a href="http://github.com/elan71592"><img src="imgs/git.png" alt="" class="git"></a>
     </div>
-    <h3 class="footer-name">// Elan Kvitko</h3>
+
+    <h3 class="footer-name">//elan kvitko</h3>
   </footer>
 
   <script>
     $(document).ready(function(){
-      $("#sticker").sticky({topSpacing:0});
+      $("#nav-wrapper").sticky({topSpacing:0});
+    });
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+    $(document).ready(function(){
+      $('.bxslider').bxSlider();
     });
   </script>
+
+  <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var myLatLng = {lat: 40.755452, lng: -73.990359};
+        var map = new google.maps.Map(mapDiv, {
+          center: myLatLng,
+          zoom: 17,
+          scrollwheel: false
+        });
+        var contentString = '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h3 id="firstHeading" class="firstHeading">257 West 39th St.</h3>'+
+          '<h4 id="secondHeading" class="secondHeading">16th Floor</h4>'+
+          '<div id="bodyContent">'+
+          '<p>New York, NY 10018</p>'+
+          '</div>'+
+          '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          position: myLatLng,
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+        marker.addListener('click', toggleBounce);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
 </body>
 </html>

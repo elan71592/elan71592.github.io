@@ -1,74 +1,35 @@
 $(document).ready(function() {
-  $('.entry1').mouseenter(function() {
-    $('.entry-1').css({
-      transition : 'color 0.5s ease',
-      color : '#fff',
-    })
+  // $('#download').mouseenter(function() {
+  //   $('.download-button').css({
+  //       transition : 'color 0.5s ease',
+  //       color : 'white'
+  //   });
+  // });
+  // $('#download').mouseleave(function() {
+  //   $('.download-button').css({
+  //       transition : 'color 0.5s ease',
+  //       color : '#db4453'
+  //   });
+  // });
+
+  $('.git').mouseenter(function() {
+    $('.git').attr('src', 'imgs/github-small-red.png')
   });
-  $('.entry1').mouseleave(function() {
-    $('.entry-1').css({
-      transition : 'color 0.5s ease',
-      color : '#000',
-    })
+  $('.git').mouseleave(function() {
+    $('.git').attr('src', 'imgs/git.png')
   });
-  $('.entry2').mouseenter(function() {
-    $('.entry-2').css({
-      transition : 'color 0.5s ease',
-      color : '#fff',
-    })
+
+  $('.linked').mouseenter(function() {
+    $('.linked').attr('src', 'imgs/linked-small-red.png')
   });
-  $('.entry2').mouseleave(function() {
-    $('.entry-2').css({
-      transition : 'color 0.5s ease',
-      color : '#000',
-    })
+  $('.linked').mouseleave(function() {
+    $('.linked').attr('src', 'imgs/linked-in-small.png')
   });
-  $('.entry3').mouseenter(function() {
-    $('.entry-3').css({
-      transition : 'color 0.5s ease',
-      color : '#fff',
-    })
+
+  $('.twitter').mouseenter(function() {
+    $('.twitter').attr('src', 'imgs/twitter-small-red.png')
   });
-  $('.entry3').mouseleave(function() {
-    $('.entry-3').css({
-      transition : 'color 0.5s ease',
-      color : '#000',
-    })
-  });
-  $('.entry4').mouseenter(function() {
-    $('.entry-4').css({
-      transition : 'color 0.5s ease',
-      color : '#fff',
-    })
-  });
-  $('.entry4').mouseleave(function() {
-    $('.entry-4').css({
-      transition : 'color 0.5s ease',
-      color : '#000',
-    })
-  });
-  $('.entry5').mouseenter(function() {
-    $('.entry-5').css({
-      transition : 'color 0.5s ease',
-      color : '#fff',
-    })
-  });
-  $('.entry5').mouseleave(function() {
-    $('.entry-5').css({
-      transition : 'color 0.5s ease',
-      color : '#000',
-    })
-  });
-  $('.entry6').mouseenter(function() {
-    $('.entry-6').css({
-      transition : 'color 0.5s ease',
-      color : '#fff',
-    })
-  });
-  $('.entry6').mouseleave(function() {
-    $('.entry-6').css({
-      transition : 'color 0.5s ease',
-      color : '#000',
-    })
+  $('.twitter').mouseleave(function() {
+    $('.twitter').attr('src', 'imgs/twitter-small.png')
   });
 });

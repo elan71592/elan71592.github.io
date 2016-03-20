@@ -1,0 +1,438 @@
+/*Style Header*/
+header {
+  width: 100%;
+  height: 590px;
+  background-image: url("../imgs/la-skyline.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*Style Menu Links Within Header*/
+nav#nav-wrapper {
+  width: 100%;
+  height: 50px;
+  background-color: #363636;
+  z-index: 1;
+}
+
+nav#nav-wrapper h3 {
+  margin-top: 10px;
+  margin-left: 20%;
+  float: left;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 1.7em;
+}
+
+nav#nav-wrapper h3 span {
+  color: #6ed3cf;
+}
+
+nav#nav-wrapper ul.nav {
+  float: right;
+  padding-right: 250px;
+  margin-top: -7px;
+}
+
+nav#nav-wrapper ul.nav li {
+  display: inline;
+  padding-right: 10px;
+}
+
+nav#nav-wrapper ul.nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+nav#nav-wrapper ul.nav li a.active {
+  color: #6ed3cf;
+}
+
+nav#nav-wrapper ul.nav li a:hover {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  color: #6ed3cf;
+}
+
+/*End Link Styles Within Header*/
+
+/*Style Content In Header*/
+
+header div.header-content {
+  margin-left: 200px;
+  margin-top: 350px;
+}
+
+header div.header-content h3 {
+  width: 400px;
+  padding: 10px;
+  background: rgba(219,68,83,0.85);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 1.7em;
+  text-align: center;
+  color: #fff;
+  display: block;
+}
+
+header div.header-content p {
+  text-align: center;
+  margin-top: -18px;
+  margin-left: 35px;
+  width: 330px;
+  background: rgba(128,128,128,0.85);
+  display: block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+  padding: 10px;
+  color: #fff;
+}
+
+/*End Style Content In Header*/
+/*End Style Header*/
+
+
+/*Style Sub-Header Bar*/
+
+div.resume-download {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  -webkit-box-shadow: 2px 2px 20px #000;
+          box-shadow: 2px 2px 20px #000;
+}
+
+div.resume-download h3 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  color: #db4453;
+  display: inline;
+  padding-right: 90px;
+}
+
+div.resume-download a {
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  color: #db4453;
+  font-size: 1.5em;
+  border: 2px solid #db4453;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+div.resume-download a:hover {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  color: #fff;
+  background-color: #db4453;
+}
+
+/*End Style Sub-Header Bar*/
+
+/*Style About Me Content*/
+
+section#about {
+  padding: 10px;
+  width: 100%;
+  height: 340px;
+  display: block;
+  background-color: #363636;
+}
+
+section#about h3 {
+  color: #db4453;
+  text-align: center;
+}
+
+section#about div.p-center {
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+  color: #fff;
+}
+
+/*End Style About Me Content*/
+
+
+/*Style My Work Parallax Image Content*/
+
+.my-work {
+  text-align: center;
+  margin-top: 155px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  color: #6ed3cf;
+  font-size: 4em;
+}
+
+/*End Style My Work Parallax Image Content*/
+
+/*Style My Work Page Content*/
+
+section#my-work-page {
+  height: 300px;
+  text-align: center;
+}
+
+section#my-work-page h3 {
+  text-align: center;
+}
+
+section#my-work-page img {
+  width: 200px;
+}
+
+/*End Style My Work Page Content*/
+
+
+
+/*Style Blog Parallax Image Content*/
+
+.blog {
+  text-align: center;
+  margin-top: 155px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  color: #db4453;
+  font-size: 4em;
+}
+
+/*End Style Blog Parallax Image Content*/
+
+
+/*Style Blog Page Content*/
+
+section#blog-page {
+  width: 100%;
+  height: 350px;
+  border-bottom: 1px solid #db4453;
+}
+
+section#blog-page div#section1 {
+  float: left;
+  margin-top: 30px;
+  width: 400px;
+  border-right: 2px solid #db4453;
+}
+
+section#blog-page div#section1 h3 {
+  padding-left: 50px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  color: #db4453;
+  font-size: 3em;
+}
+
+section#blog-page div#section2 {
+  float: left;
+  margin-top: 30px;
+  margin-left: 40px;
+  height: 300px;
+  width: 800px;
+}
+
+div.bx-viewport {
+  height: 255px !important;
+}
+
+h3.see-all-posts {
+  clear: both;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  color: #db4453;
+  font-size: 3em;
+  border-bottom: 1px solid #db4453;
+}
+
+h3.see-all-posts a {
+  color: #529e9b;
+}
+
+/*End Style Blog Page Content*/
+
+/*Style Contact Page Content*/
+
+#map {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+}
+
+div.map-overlay {
+  width: 100%;
+  height: 0px;
+  top: 0;
+  position: relative;
+  -webkit-box-shadow: 33px 53px 85px 36px #000;
+          box-shadow: 33px 53px 85px 36px #000;
+}
+
+section#contact-page h3.email {
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  color: #db4453;
+  font-size: 3em;
+  padding-top: 400px;
+}
+
+section#contact-page div.call h3 {
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  color: #db4453;
+  font-size: 3em;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 2px solid #db4453;
+  border-bottom: 40px solid #6ed3cf;
+  margin-bottom: 0;
+}
+
+section#contact-page form {
+  margin: 0 auto;
+  width: 880px;
+}
+
+#contact-form #submit-button {
+    width: 20%;
+    color:#FFF;
+    border:none;
+    background-color:#db4453;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    padding: 10px;
+
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label {
+    font-family: 'Rubik', sans-serif;
+    margin-bottom:2px;
+    font-size: 16px;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label placeholder {
+    font: 14px Rubik;
+    margin-bottom:2px;
+}
+
+#contact-form #name, #email, #phone {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ff0000;
+  background-color: transparent;
+  outline: none;
+  height: 3rem;
+  margin: 0 0 15px 0;
+  padding: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#contact-form #message {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ff0000;
+  background-color: transparent;
+  outline: none;
+  height: 3rem;
+  margin: 0 0 15px 0;
+  padding: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#contact-form textarea {
+    height: 400px;
+    resize: none;
+  }
+
+/*End Style Contact Page Content*/
+
+/*Style Footer*/
+
+footer {
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  background-color: #363636;
+}
+
+footer h3.copyright {
+  float: left;
+  font-family: 'Rubik', sans-serif;
+  color: #6ed3cf;
+  font-size: 1.1em;
+  margin-bottom: 0;
+  margin-top: 15px;
+  margin-right: -130px;
+  padding-left: 20px;
+}
+
+footer h3.footer-name {
+  float: right;
+  font-family: 'Rubik', sans-serif;
+  color: #6ed3cf;
+  font-size: 1.1em;
+  margin-bottom: 0;
+  margin-top: -30px;
+  padding-right: 20px;
+}
+
+footer div {
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer div.social-icons img {
+  display: inline;
+  width: 30px;
+}
+
+/*End Style Footer*/
+
+
+/*Style Parallax Image Heights*/
+
+div.one {
+  height: 465px;
+}
+
+div.two {
+  height: 350px;
+}
+
+div.three {
+  height: 350px;
+}
+
+div.four {
+  height: 350px;
+}
+
+/*End Style Parallax Image Heights*/
