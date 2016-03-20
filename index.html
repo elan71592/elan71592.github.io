@@ -13,17 +13,18 @@
   <script src="garand-sticky/jquery.sticky.js"></script>
   <script src="materialize/js/materialize.min.js"></script>
   <script src="jquery.bxslider/jquery.bxslider.min.js"></script>
+  <script src="scrollTo/jquery.scrollTo.min.js"></script>
 </head>
 <body>
-  <header>
+  <header id="head">
     <nav id="nav-wrapper">
       <h3><span>//</span>elan kvitko</h3>
-      <ul class="nav">
-        <li><a href="index.html" class="active">/Home</a></li>
-        <li><a href="#">/About Me</a></li>
-        <li><a href="#">/My Work</a></li>
-        <li><a href="#">/Blog</a></li>
-        <li><a href="#">/Contact</a></li>
+      <ul id="nav" class="nav">
+        <li><a href="#head">/Home</a></li>
+        <li><a href="#about-par">/About Me</a></li>
+        <li><a href="#my-work-par">/My Work</a></li>
+        <li><a href="#blog-par">/Blog</a></li>
+        <li><a href="#contact-par">/Contact</a></li>
       </ul>
     </nav>
 
@@ -38,7 +39,7 @@
     <a href="#" id="download">Download Now!</a>
   </div>
 
-  <div class="parallax-container one">
+  <div id="about-par" class="parallax-container one">
     <div class="parallax"><img src="imgs/elan-pic2.jpg" alt=""></div>
   </div>
 
@@ -49,7 +50,7 @@
     </div>
   </section>
 
-  <div class="parallax-container two">
+  <div id="my-work-par" class="parallax-container two">
     <div class="parallax"><img src="imgs/my-work.jpg" alt=""></div>
     <h1 class="my-work">MY WORK</h1>
   </div>
@@ -59,7 +60,7 @@
     <img src="imgs/stewie.png" alt="">
   </section>
 
-  <div class="parallax-container three">
+  <div id="blog-par" class="parallax-container three">
     <div class="parallax"><img src="imgs/blog.jpg" alt=""></div>
     <h1 class="blog">BLOG</h1>
   </div>
@@ -83,7 +84,7 @@
       <h3 class="see-all-posts">Check Out All My Posts <a href="blog/index.html">Here!</a></h3>
   </div>
 
-  <div class="parallax-container four">
+  <div id="contact-par" class="parallax-container four">
     <div class="parallax"><img src="imgs/contact.jpg" alt=""></div>
   </div>
 
@@ -128,6 +129,16 @@
 
     <h3 class="footer-name">//elan kvitko</h3>
   </footer>
+
+
+  <script>
+    $(function(){
+      $("#nav a").click(function(e){
+        e.preventDefault();
+        $('html,body').scrollTo(this.hash,this.hash);
+      });
+    });
+  </script>
 
   <script>
     $(document).ready(function(){

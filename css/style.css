@@ -49,10 +49,6 @@ nav#nav-wrapper ul.nav li a {
   font-size: 1em;
 }
 
-nav#nav-wrapper ul.nav li a.active {
-  color: #6ed3cf;
-}
-
 nav#nav-wrapper ul.nav li a:hover {
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
