@@ -262,7 +262,8 @@ h3.see-all-posts {
 }
 
 h3.see-all-posts a {
-  color: #529e9b;
+  color: #db4453;
+  text-decoration: underline;
 }
 
 /*End Style Blog Page Content*/
