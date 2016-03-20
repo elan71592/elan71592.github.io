@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Elan Kvitko</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <link rel="stylesheet" href="../materialize/css/materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="../js/color.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="../js/color.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
+  <script src="../materialize/js/materialize.min.js"></script>
+  <script src="../jquery.bxslider/jquery.bxslider.min.js"></script>
+</head>
+  <body>
+    <header>
+      <nav id="nav-wrapper">
+        <h3><span>//</span>elan kvitko</h3>
+        <ul class="nav">
+          <li><a href="../index.html" class="active">/Home</a></li>
+          <li><a href="#">/About Me</a></li>
+          <li><a href="#">/My Work</a></li>
+          <li><a href="#">/Blog</a></li>
+          <li><a href="#">/Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <div id="section-one">
+        <section class="title">
+          <h3>Ruby Classes/h3>
+          <h4>March 20th, 2016</h4>
+        </section>
+
+        <div class="content">
+          <pre>
+            <code>
+              class Person
+                attr_accessor :name, :city
+                attr_reader :hash
+
+                def initialize(name, city)
+                  @name = name
+                  @age = age
+                end
+
+                def favorite_fruits(fruits)
+                  name = @name
+                  @hash = {
+                    name => {favorite_fruits: fruits}
+                  }
+                end
+              end
+
+              elan = Person.new("Elan", "NYC") #=> <br>This creates the object of Person and <br>stores it in a variable.
+
+              elan.name #=> Returns the name
+
+              elan.name = "David" #=> Changes the name
+
+              elan.city #=> Returns the city
+
+              elan.city = "LA" #=> Changes the city
+
+              elan.hash #=> Returns the hash
+
+              elan.hash = {} #=> OOPS! This will not work here.
+            </code>
+          </pre>
+          <p>
+            Classes. Gotta love em' huh? They're actually super awesome and can get a little confusing. However, once you get the hang of it, you'll be attached to them forever! Hopefully you got a good look at the code up there. Now let's go through it step by step. In order to declare a class method, we do:
+
+            <pre>
+              <code>
+                class Person
+                end
+              </code>
+            </pre>
+          </p>
+
+          <p>
+            This is slightly different from a regular method that we're used to, like so:
+
+            <pre>
+              <code>
+                def person
+                end
+              </code>
+            </pre>
+          </p>
+
+          <p>
+            Ok this is really the easy part. A class in simplest terms is like a parent and it holds all of your regular methods that you've been practicing lately in it. These methods are like it's children, or minions. I like to say minions haha. When we define a method, we define it beginning with lowercase letters. When defining a class method, we do the same thing just begin with an uppercase letter and instead of "def", we use "class". Take a look at the difference between the two.
+
+            <br>
+            <br>
+
+            A Class method usually starts with an initialize method. Depending on certain circumstances, this can change but for the most part, we'll stick to it. So to our Person class, we add the initialize method which will run every single time automagically when we create a new instance of this class. In case you're wondering, a new instance of this class means we are simply calling on this class to create a new object. So take a look:
+
+            <pre>
+              <code>
+                class Person
+                  def initialize(name, city)
+                    @name = name
+                    @city = city
+                  end
+                end
+              </code>
+            </pre>
+          </p>
+
+          <p>
+            If you notice, not much here is really changing. A few things might look new but it's nothing too crazy. Let's dive in. The initialize method is being passed two arguments. Name and City. Both of which are being set to some weird looking variables. These variables with an @ sign, are called instance variables. They can be accessed within any method of the instance of that class. This sounds confusing but you'll see how cool it is in a second. When we create our next method like so:
+
+            <pre>
+              <code>
+                class Person
+                  def initialize(name, city)
+                    @name = name
+                    @city = city
+                  end
+
+                  def favorite_fruits(fruits)
+                    name = @name
+                    @hash = {
+                      name => {favorite_fruits: fruits}
+                    }
+                  end
+                end
+              </code>
+            </pre>
+          </p>
+
+          <p>
+            Those instance variables come in handy. Now you see I can access my @name variable in my favorite_fruits method. Then I set it to a local variable name. Now remember that name is local to my favorite_fruits method so therefore I am free to use that variable to store the value of my instance variable @name. The two are NOT the same. Then I create a instance variable @hash and give it another hash inside by the name of the name variable which holds a symbol key of favorite_fruits: and a value of the fruits array passed in or it can be a string as well. Fruits being plural, I would assume as a reader that this would be an array. Anyway, I didn't have to make @hash an instance variable right? The method would have still worked if I would have just used hash. BUT, here's the thing. What if I want to know the value of hash later? How would I access it? I wouldn't if it wasn't an instance variable. I'd have to run my method again but still it wouldn't be stored somewhere I can just look at whenever I need to. So how do you use these instance variables to get information again? Simple! The attr methods. Awesome stuff we're going to look at now:
+
+            <pre>
+              <code>
+                class Person
+                  attr_accessor :name, :city
+                  attr_reader :hash
+
+                  def initialize(name, city)
+                    @name = name
+                    @city = city
+                  end
+
+                  def favorite_fruits(fruits)
+                    name = @name
+                    @hash = {
+                      name => {favorite_fruits: fruits}
+                    }
+                  end
+                end
+              </code>
+            </pre>
+          </p>
+
+          <p>
+
+            Sweet huh? Did you guess what those attr methods do? Well, the accessor one might be strange but the reader one does exactly what you would think it does. It creates a method that essentially returns that instance variable @hash. Meaning, if we were to create this Person object and store it in a variable, let's say elan. All we have to do to see what @hash is, is to say elan.hash. BAM! It'll give it to you. You can also do elan.name or elan.city here and get a result for those two as well. Wait ELAN! I don't get it? The other two are attr_accessor though. Why not reader like hash is? Well that is a great question and I'm so happy you asked that hah! In Ruby, we have a reader method and a writer method. The reader returns the value. The writer method has the ability to manipulate the value. The attr_accessor method creates both automatically for you. You also have the attr_writer and attr_reader methods that you can use to create both separately for you. Now for this exercise I used accessor instead of writer because I need to use both to show you how I can read and write. So let's dive in and I think you'll get a better understanding.
+
+            <pre>
+              <code>
+                class Person
+                  attr_accessor :name, :city
+                  attr_reader :hash
+
+                  def initialize(name, city)
+                    @name = name
+                    @city = city
+                  end
+
+                  def favorite_fruits(fruits)
+                    name = @name
+                    @hash = {
+                      name => {favorite_fruits: fruits}
+                    }
+                  end
+                end
+
+                # With this class method, I can create my object.
+
+                elan = Person.new("Elan", "NYC")
+                # This creates me :)
+
+                # Then we can say:
+
+                elan.name
+                #=> "Elan"
+
+                or:
+
+                elan.city
+                #=> "NYC"
+
+                # We can achieve that because of the attr_methods!
+                # The accessor also allows us to write though, remember?
+
+                elan.name = "David"
+                elan.name
+                #=> "David"
+
+                # Amazing right?
+              </code>
+            </pre>
+          </p>
+
+          <p>
+            So there you have it! That's a short intro to classes. I hope it was somewhat understanding to you guys. Please email me if you have any questions.
+          </p>
+        </div>
+      </div>
+
+      <aside id="sidebar">
+        <h3 class="other-posts">Check Out Some Other Posts!</h3>
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Git & Version Control</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// CSS Concepts</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Arrays & Hashes</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Enumerable Methods</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Ruby Classes</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+        </ul>
+
+        <h3 class="follow">Follow Me</h3>
+      </aside>
+    </main>
+
+    <footer>
+      <h3 class="copyright">Copyright, 2016 &copy;</h3>
+
+      <div class="social-icons">
+        <a href=""><img src="../imgs/social-fb-footer.png" alt="" class="fb-link"></a>
+        <a href=""><img src="../imgs/social-insta-footer.png" alt="" class="insta-link"></a>
+        <a href=""><img src="../imgs/social-linkedin-footer.png" alt="" class="linked"></a>
+        <a href=""><img src="../imgs/social-twitter-footer.png" alt="" class="twitter"></a>
+        <a href="http://github.com/elan71592"><img src="../imgs/git.png" alt="" class="git"></a>
+      </div>
+
+      <h3 class="footer-name">//elan kvitko</h3>
+    </footer>
+
+
+    <script>
+      $(document).ready(function(){
+        $("#nav-wrapper").sticky({topSpacing:0});
+        });
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $('.collapsible').collapsible({
+          accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+      });
+    </script>
+  </body>
+</html>

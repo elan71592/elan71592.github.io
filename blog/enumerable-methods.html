@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Elan Kvitko</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <link rel="stylesheet" href="../materialize/css/materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="../js/color.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="../js/color.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
+  <script src="../materialize/js/materialize.min.js"></script>
+  <script src="../jquery.bxslider/jquery.bxslider.min.js"></script>
+</head>
+  <body>
+    <header>
+      <nav id="nav-wrapper">
+        <h3><span>//</span>elan kvitko</h3>
+        <ul class="nav">
+          <li><a href="../index.html" class="active">/Home</a></li>
+          <li><a href="#">/About Me</a></li>
+          <li><a href="#">/My Work</a></li>
+          <li><a href="#">/Blog</a></li>
+          <li><a href="#">/Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <div id="section-one">
+        <section class="title">
+          <h3>Enumerable Methods <br>I'll have one of EACH!</h3>
+          <h4>March 12th, 2016</h4>
+        </section>
+
+        <div class="content">
+          <pre>
+            <code>
+              fruits = ["apples", "pairs", "strawberries", "blueberries", "plumbs"]
+
+              person = {
+                    "name" => "elan",
+                    "city" => "nyc",
+                    "favorite food" => "pizza"
+                    "favorite number" => 15
+                    }
+              <em style="color: green;"># This is an array of fruits and a hash <br>to store a person's attributes</em>
+            </code>
+          </pre>
+          <p>
+            Alright! Now for some fun stuff. By now I think we all know what those two types of data storage are. An array and a hash. If you don't know, check out my other <a href="arrays-hashes.html">Blog Post</a> on them. Let's begin with something really awesome shall we?<br><br>
+            One of the most common if not THE most common rubyist go-to enumerable methods, is the Each enumerable. All the way from the Gods for code, comes a method that will change your life...FOREVER! Does that sound like a good pitch for a trailer? I think there should be more movies about developers!<br><br>
+
+            Ok. So what is this each method and how does it work. Well as you can most likely guess, the each method can be called on a data structure in ruby such as a hash or an array and go through each stored entry of data within them. This can make for an extremely handy tool and definitely will be used a lot in your developer life. We need to gain control over things in our data structures to manipulate them and construct programs to our specifics. If we wouldn't be able to manipulate data inside of these structures, then why have them at all right?<br><br>
+
+            Now we know what each does but umm, how the heck do you use it? OK! calm down people i'll tell ya! You use it by, erm.. well here: <br><br>
+          </p>
+
+            <pre>
+              <code>
+                fruits.each do |fruit|
+                  puts "I love #{fruit}!"
+                end
+
+                <em style="color: green;">#=> "I love apples!" <br> #=> "I love pairs!" <br> #=> "I love strawberries!" <br> #=> "I love blueberries!" <br> #=> "I love plumbs!"</em>
+              </code>
+            </pre>
+
+          <p>
+            Looks pretty straight forward right? All we're doing is calling each on our fruits array by adding a ".each" to the end of fruits. Followed by that we write the word "do" which begins our loop. This is then followed by a keyword inside two pipes (ex: |fruit| ). This is telling ruby that for each item in the array, we will substitute it for this word. This in no way means we are changing each word to the new keyword. We are simply gaining control over each item in the array by using a keyword. Then your code for what you want to do with each item goes in between your do and end statement like above.
+
+            Now that we got that settled. Seems easy right? Well it's no different for hashes either, except with a hash, your code would differ slightly with what goes between the pipes, like so: <br><br>
+          </p>
+
+            <pre>
+              <code>
+                person.each do |key, value|
+                  puts "My #{key} is #{value}"
+                end
+
+                <em style="color: green;">#=> "My name is elan" <br> #=> "My city is nyc" <br> #=> "My favorite food is pizza" <br> #=> "My favorite number is 15"</em>
+              </code>
+            </pre>
+
+          <p>
+            See? Simple! Arrays only need one keyword. Hashes need two. One for the key, and one for the value. In this case, my hash is one which contains attributes of myself as keys and the answers as values, so I named my keywords in that fashion but you'll come up with your own for your programs!
+
+            <br><br>
+
+            Now that you have an idea of the enumerable method "each". Go try it out on your own. Do something simple like favorite city. Test it out with an array of cities. Then try building a simple hash and using the each method on it. Enjoy!
+
+          </p>
+        </div>
+      </div>
+
+      <aside id="sidebar">
+        <h3 class="other-posts">Check Out Some Other Posts!</h3>
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Git & Version Control</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// CSS Concepts</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Arrays & Hashes</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Enumerable Methods</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Ruby Classes</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+        </ul>
+
+        <h3 class="follow">Follow Me</h3>
+      </aside>
+    </main>
+
+    <footer>
+      <h3 class="copyright">Copyright, 2016 &copy;</h3>
+
+      <div class="social-icons">
+        <a href=""><img src="../imgs/social-fb-footer.png" alt="" class="fb-link"></a>
+        <a href=""><img src="../imgs/social-insta-footer.png" alt="" class="insta-link"></a>
+        <a href=""><img src="../imgs/social-linkedin-footer.png" alt="" class="linked"></a>
+        <a href=""><img src="../imgs/social-twitter-footer.png" alt="" class="twitter"></a>
+        <a href="http://github.com/elan71592"><img src="../imgs/git.png" alt="" class="git"></a>
+      </div>
+
+      <h3 class="footer-name">//elan kvitko</h3>
+    </footer>
+
+
+    <script>
+      $(document).ready(function(){
+        $("#nav-wrapper").sticky({topSpacing:0});
+        });
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $('.collapsible').collapsible({
+          accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+      });
+    </script>
+  </body>
+</html>
