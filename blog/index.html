@@ -3,57 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <title>Elan Kvitko</title>
-  <link rel="stylesheet" href="../stylesheets/default.css">
-  <link rel="stylesheet" href="../stylesheets/blog-index.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-  <script src="../scripts/modernizr-2.6.1.min.js"></script>
-  <script src="../js/footer-social-all-pages.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/blog_index.css">
+  <link rel="stylesheet" href="../materialize/css/materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="../js/color.js"></script>
   <script src="../garand-sticky/jquery.sticky.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="../js/color.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
+  <script src="../materialize/js/materialize.min.js"></script>
+  <script src="../jquery.bxslider/jquery.bxslider.min.js"></script>
 </head>
   <body>
-    <header class="bg"></header>
-
-    <header id="sticker">
-      <ul class="navi">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#">My Work</a></li>
-        <li><a href="index.html" class="active">Blog</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
+    <header>
+      <nav id="nav-wrapper">
+        <h3><span>//</span>elan kvitko</h3>
+        <ul class="nav">
+          <li><a href="../index.html" class="active">/Home</a></li>
+          <li><a href="#">/About Me</a></li>
+          <li><a href="#">/My Work</a></li>
+          <li><a href="#">/Blog</a></li>
+          <li><a href="#">/Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-      <table>
-        <tr>
-          <td class="entry1"><div class="boxes"><a href="git.html" class="main-posts entry-1">// Git & Version Control</a></div></td>
-          <td class="entry2"><div class="boxes"><a href="css-concepts.html" class="main-posts entry-2">// CSS Concepts</a></div></td>
-          <td class="entry3"><div class="boxes"><a href="arrays-hashes.html" class="main-posts entry-3">// Arrays & Hashes</a></div></td>
-        </tr>
-        <tr>
-          <td class="entry4"><div class="boxes"><a href="enumerable-methods.html" class="main-posts entry-4">// Enumerable Methods</a></div></td>
-          <td class="entry5"><div class="boxes"><a href="" class="main-posts entry-5">// Post 5</a></div></td>
-          <td class="entry6"><div class="boxes"><a href="" class="main-posts entry-6">// Post 6</a></div></td>
-        </tr>
-      </table>
-    </main>
+    <div class="parallax-container one">
+      <div class="parallax"><img src="../imgs/blog-index.jpg" alt=""></div>
+    </div>
+
+    <div class="parallax-container two">
+      <a href="enumerable-methods.html" class="center-link">//  Ruby Classes</a>
+      <div class="parallax"><img src="../imgs/blog-1.jpg" alt=""></div>
+    </div>
+
+    <div class="parallax-container two">
+      <a href="enumerable-methods.html" class="center-link">// Enumerable Methods</a>
+      <div class="parallax"><img src="../imgs/blog-1.jpg" alt=""></div>
+    </div>
+
+    <div class="parallax-container three">
+      <a href="arrays-hashes.html" class="center-link">// Arrays & Hashes</a>
+      <div class="parallax"><img src="../imgs/blog-2.jpg" alt=""></div>
+    </div>
+
+    <div class="parallax-container four">
+      <a href="css-concepts.html" class="center-link">// CSS Concepts</a>
+      <div class="parallax"><img src="../imgs/blog-3.jpg" alt=""></div>
+    </div>
+
+    <div class="parallax-container five">
+      <a href="git.html" class="center-link">// Git & Version Control</a>
+      <div class="parallax"><img src="../imgs/blog-4.jpg" alt=""></div>
+    </div>
+
 
     <footer>
-    <h3 class="copyright">Copyright &copy</h3>
-    <div class="social-icons">
-      <a href=""><img src="../imgs/social-fb-footer.png" alt="" class="fb-link"></a>
-      <a href=""><img src="../imgs/social-insta-footer.png" alt="" class="insta-link"></a>
-      <a href=""><img src="../imgs/social-linkedin-footer.png" alt="" class="linked-link"></a>
-      <a href=""><img src="../imgs/social-twitter-footer.png" alt="" class="twitter-link"></a>
-      <a href="http://github.com/elan71592"><img src="../imgs/git.png" alt="" class="git-link"></a>
-    </div>
-    <h3 class="footer-name">// Elan Kvitko</h3>
-  </footer>
+      <h3 class="copyright">Copyright, 2016 &copy;</h3>
 
+      <div class="social-icons">
+        <a href=""><img src="../imgs/social-fb-footer.png" alt="" class="fb-link"></a>
+        <a href=""><img src="../imgs/social-insta-footer.png" alt="" class="insta-link"></a>
+        <a href=""><img src="../imgs/social-linkedin-footer.png" alt="" class="linked"></a>
+        <a href=""><img src="../imgs/social-twitter-footer.png" alt="" class="twitter"></a>
+        <a href="http://github.com/elan71592"><img src="../imgs/git.png" alt="" class="git"></a>
+      </div>
+
+      <h3 class="footer-name">//elan kvitko</h3>
+    </footer>
 
     <script>
       $(document).ready(function(){
-        $("#sticker").sticky({topSpacing:0});
+        $('.parallax').parallax();
       });
     </script>
   </body>

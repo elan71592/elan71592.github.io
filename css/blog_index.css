@@ -1,0 +1,51 @@
+header {
+  background-image: none;
+  height: auto;
+}
+
+.one {
+  width: 100%;
+}
+
+.two {
+  float: left;
+  width: 50%;
+  height: 150px !important;
+}
+
+.three {
+  float: left;
+  width: 50%;
+  height: 150px !important;
+}
+
+.four {
+  float: left;
+  width: 50%;
+  height: 150px !important;
+}
+
+.five {
+  float: left;
+  width: 50%;
+  height: 150px !important;
+}
+
+a.center-link {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 1.7em;
+  color: #fff;
+  margin-top: 50px;
+  position: absolute;
+  margin-left: 180px;
+}
+
+a.center-link:hover {
+  transition: color 0.5s ease;
+  color: #6ed3cf;
+}
+
+footer {
+  clear: both;
+}
