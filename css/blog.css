@@ -1,0 +1,99 @@
+@font-face {
+  font-family: ProximaNova;
+  src: url(../fonts/proximanova-light-webfont.ttf);
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+header {
+  background-image: none;
+  width: 100%;
+  height: auto;
+}
+
+main#main-content {
+  float: left;
+  margin-top: 30px;
+  margin-left: 180px;
+  margin-bottom: 50px;
+  padding: 20px;
+  width: 70%;
+  border: 1px solid #d7d7d7;
+  background-color: #fff;
+}
+
+main#main-content div#section-one {
+  width: 60%;
+  float: left;
+}
+
+main#main-content aside#sidebar {
+  width: 33%;
+  float: left;
+  margin-top: -20px;
+  margin-left: 50px;
+  padding-bottom: 20px;
+}
+
+main#main-content h3 {
+  text-align: center;
+  font: 40px ProximaNova;
+  color: #525252;
+  font-weight: 400;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+main#main-content h4 {
+  text-align: center;
+  margin-top: 10px;
+  font: 30px ProximaNova;
+  color: #525252;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+
+main#main-content aside h3.other-posts {
+  font: 26px ProximaNova;
+  color: #525252;
+  font-weight: 300;
+  margin-left: 20px;
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+main#main-content aside h3.follow {
+  text-align: center;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 0;
+  margin-top: 20px;
+  padding-top: 10px;
+  font: 30px ProximaNova;
+  color: #525252;
+  font-weight: 300;
+}
+
+main#main-content p {
+  font-family: ProximaNova;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+}
+
+ul.collapsible {
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 2px solid #d7d7d7;
+  margin-top: 30px;
+}
+
+footer {
+  clear: both;
+}
+
+div#cat-img {
+  text-align: center;
+}

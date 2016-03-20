@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Elan Kvitko</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <link rel="stylesheet" href="../materialize/css/materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="../js/color.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="../js/color.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
+  <script src="../materialize/js/materialize.min.js"></script>
+  <script src="../jquery.bxslider/jquery.bxslider.min.js"></script>
+</head>
+  <body>
+    <header>
+      <nav id="nav-wrapper">
+        <h3><span>//</span>elan kvitko</h3>
+        <ul class="nav">
+          <li><a href="../index.html" class="active">/Home</a></li>
+          <li><a href="#">/About Me</a></li>
+          <li><a href="#">/My Work</a></li>
+          <li><a href="#">/Blog</a></li>
+          <li><a href="#">/Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <div id="section-one">
+        <section class="title">
+          <h3>Margin, Border, Padding <br>What's the difference?</h3>
+          <h4>February 25th, 2016</h4>
+        </section>
+
+        <div class="content">
+          <p>
+            Ok guys. This is one of the most important things you can learn in CSS...scratch that! EVERYTHING you can learn in CSS is the most important thing. It all just comes together but for this post, let's focus on some awesome things like margins, paddings, and borders. Let's begin with margins! Margins live outside of the borders. Essentially, it is the space on the outside of the border. They are the outermost part of an element that you can manipulate. Using margins, you can style the position of an element on the page. So one thing we know for sure, margins are pretty cool guys!
+          <br>
+          <br>
+          <p>
+            Moving on to borders. Borders surround the content and lay between the content and margins. Borders serve a lot of different purposes. Stylistically, they are used extremely often and I found them to be absolutely wonderful to use when working with div elements.
+          </p>
+          <br>
+          <br>
+          <p>
+            Soooooo, this brings us to our last part. The padding! Padding lives between the content and the borders. It is basically the space that is between the two. This is extremely important because sometimes you want to use padding over margin. The image below will show a great example of the 3 and how they work.
+          <br>
+          <br>
+          </p>
+
+          <div id="cat-img">
+            <img src="img/boxdim.gif" alt="#">
+          </div>
+        </div>
+      </div>
+
+      <aside id="sidebar">
+        <h3 class="other-posts">Check Out Some Other Posts!</h3>
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Git & Version Control</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// CSS Concepts</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Arrays & Hashes</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Enumerable Methods</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Ruby Classes</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+        </ul>
+
+        <h3 class="follow">Follow Me</h3>
+      </aside>
+    </main>
+
+    <footer>
+      <h3 class="copyright">Copyright, 2016 &copy;</h3>
+
+      <div class="social-icons">
+        <a href=""><img src="../imgs/social-fb-footer.png" alt="" class="fb-link"></a>
+        <a href=""><img src="../imgs/social-insta-footer.png" alt="" class="insta-link"></a>
+        <a href=""><img src="../imgs/social-linkedin-footer.png" alt="" class="linked"></a>
+        <a href=""><img src="../imgs/social-twitter-footer.png" alt="" class="twitter"></a>
+        <a href="http://github.com/elan71592"><img src="../imgs/git.png" alt="" class="git"></a>
+      </div>
+
+      <h3 class="footer-name">//elan kvitko</h3>
+    </footer>
+
+
+    <script>
+      $(document).ready(function(){
+        $("#nav-wrapper").sticky({topSpacing:0});
+        });
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $('.collapsible').collapsible({
+          accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+      });
+    </script>
+  </body>
+</html>
