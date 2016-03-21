@@ -274,11 +274,15 @@ h3.see-all-posts a {
 
 div.map-overlay {
   width: 100%;
-  height: 0px;
-  top: 0;
+  height: 200px;
   position: relative;
-  -webkit-box-shadow: 33px 53px 85px 36px #000;
-          box-shadow: 33px 53px 85px 36px #000;
+  margin-top: -0.2px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+69,000000+100&0.75+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.23) 69%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.23) 69%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.23) 69%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
 }
 
 section#contact-page h3.email {
@@ -287,7 +291,7 @@ section#contact-page h3.email {
   font-weight: 500;
   color: #db4453;
   font-size: 3em;
-  padding-top: 400px;
+  padding-top: 200px;
 }
 
 section#contact-page div.call h3 {
