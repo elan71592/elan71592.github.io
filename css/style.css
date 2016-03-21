@@ -150,6 +150,7 @@ section#about {
 section#about h3 {
   color: #db4453;
   text-align: center;
+  margin-top: 5px;
 }
 
 section#about div.p-center {
