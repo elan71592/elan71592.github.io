@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Elan Kvitko</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <link rel="stylesheet" href="../materialize/css/materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="../js/color.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="../js/color.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
+  <script src="../materialize/js/materialize.min.js"></script>
+  <script src="../jquery.bxslider/jquery.bxslider.min.js"></script>
+</head>
+  <body>
+    <header>
+      <nav id="nav-wrapper">
+        <h3><span>//</span>elan kvitko</h3>
+        <ul class="nav">
+          <li><a href="../index.html">&lt;&lt; Go Back Home</a></li>
+          <li><a href="index.html">&lt;&lt; Go Back</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <div id="section-one">
+        <section class="title">
+          <h3>JavaScript & Ruby<br>The Differences of Loooping</h3>
+          <h4>March 23rd, 2016</h4>
+        </section>
+
+        <div class="content">
+          <pre>
+            <code>
+              #=> Ruby
+
+              foods = ["pizza", "burgers", "chips"]
+
+              foods.each do |food|
+                puts food
+              end
+
+              #=> JavaScript
+
+              var foods = ["pizza", "burgers", "chips"];
+
+              foods.forEach(function(food) {
+                console.log(food);
+              });
+            </code>
+          </pre>
+          <p>
+            Up there is just one way Ruby and JavaScript differ in their looping. But just take a look at the syntax for a second. Now of course you're probably thinking, eww! Whys is that JavaScript even up there? It looks so bleh! And lemme tell you, I KNOW! Ruby is definitely much more English-Friendly while JavaScript looks very loose. Ruby definitely makes it easier to loop however, getting used to the loops in JavaScript isn't so difficult. It's much easier than one might think. Let's take a look at that code piece by piece and really see what it is doing.
+            <pre>
+              <code>
+                foods.forEach(function(food) {
+                  console.log(food);
+                });
+              </code>
+            </pre>
+          </p>
+
+          <p>
+           The forEach being called on foods is the same as the each method being called on the same array in Ruby. But wait! Ruby has a little bit of a clearer understanding of what is going on with the code after you call the each method. In Ruby you write the keyword do followed by pipes ( || ) with a keyword to be a placeholder for each element in the array. Well JavaScript can be a little bit confusing but allow me to decipher this for you. With the forEach method, we open the parentheses. Inside we call function which is essentially the same thing as do in Ruby. I mean let's take a look at it from a logical perspective. When you tell Ruby do, you're really saying "Hey Ruby, carry out this function for each element". Well in JavaScript, instead of saying do, saying function just cuts straight to the chase. So logically, it makes sense. Then we open the parentheses for function which we now can pass in our placeholder keyword for each value in the array. Then we open the bracket signaling to Javascript that whatever is in these brackets is the block of code we want to evaluate. In this case, console.log which is the same as puts in Ruby. It will not return anything. Just simply print out to the screen, or in this case, log to the JavaScript console. And to console.log, we open parentheses and pass in what we want to log to the screen. This is fairly simple in practice. Now let me show you another bit of JavaScript code for looping and you try guessing what it does!
+
+            <pre>
+              <code>
+                var names = ["Elan", "Alex", "Vlad", "Sabina", "Erica"];
+
+                for ( var idx = 0; idx < names.length; idx++ ) {
+                  console.log( names[ idx ] );
+                }
+              </code>
+            </pre>
+          </p>
+
+          <p>
+            The for loop can get quite confusing. But guess what, this is doing the same thing that our each method was doing a moment ago with another array. Now check this out. We say for ( var idx = 0 ). This means we are starting our for loop and setting a new variable there. The variable name can be anything and we can give it any value we like. Then we go to the next portion: for ( var idx = 0; idx < names.length ). This is setting the condition. As long as this condition is true, JavaScript will continue to loop. Then, we write our code block:
+
+            <pre>
+              <code>
+                for ( var idx = 0; idx < names.length ) {
+                  console.log( names[ idx ] );
+                }
+              </code>
+            </pre>
+          </p>
+
+          <p>
+            JavaScript will first create that variable, then it will check if the condition is true, and then it evaluates the code inside the block. What does it do after? Well, it comes back up to our last part of the "for" line like so:
+
+            <pre>
+              <code>
+                for ( var idx = 0; idx < names.length; idx++ ) {
+                  console.log( names[ idx ] );
+                }
+              </code>
+            </pre>
+          </p>
+
+          <p>
+            That last part of the "for" line gets executed last because it acts as the "update" function. We need to eventually break out of this loop. This last bit of code will update our variable that we set in the beginning after each loop through the code block until the condition is finally no longer true.
+          </p>
+
+          <p>
+
+           There is quite a lot more to it but for now, try to take that in. Also, it is important to know the for loop because it comes in handy when not working with arrays. Keep in mind that the forEach() method can only be called on an Array. It will not work on a string. The for loop would though! Happy looping :)
+          </p>
+        </div>
+      </div>
+
+      <aside id="sidebar">
+        <h3 class="other-posts">Check Out Some Other Posts!</h3>
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Git & Version Control</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// CSS Concepts</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Arrays & Hashes</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Enumerable Methods</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Ruby Classes</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// JavaScript - Ruby</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+        </ul>
+
+        <h3 class="follow">Follow Me</h3>
+      </aside>
+    </main>
+
+    <footer>
+      <h3 class="copyright">Copyright, 2016 &copy;</h3>
+
+      <div class="social-icons">
+        <a href=""><img src="../imgs/social-fb-footer.png" alt="" class="fb-link"></a>
+        <a href=""><img src="../imgs/social-insta-footer.png" alt="" class="insta-link"></a>
+        <a href=""><img src="../imgs/social-linkedin-footer.png" alt="" class="linked"></a>
+        <a href=""><img src="../imgs/social-twitter-footer.png" alt="" class="twitter"></a>
+        <a href="http://github.com/elan71592"><img src="../imgs/git.png" alt="" class="git"></a>
+      </div>
+
+      <h3 class="footer-name">//elan kvitko</h3>
+    </footer>
+
+
+    <script>
+      $(document).ready(function(){
+        $("#nav-wrapper").sticky({topSpacing:0});
+        });
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $('.collapsible').collapsible({
+          accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+      });
+    </script>
+  </body>
+</html>
