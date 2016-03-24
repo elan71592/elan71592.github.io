@@ -30,7 +30,9 @@
 
     <div class="header-content">
       <h3>Developer</h3>
-      <p class="dev-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni molestias quasi libero deserunt, reiciendis cupiditate obcaecati accusantium repudiandae placeat est quam odio nihil sint dicta, molestiae, id aut. Optio, tenetur!</p>
+      <p class="dev-text">
+        var elan = {<br>name: "Elan", <br> loves: "Los Angeles", <br> passion: "Coding", <br> biggestDesire: "To live where I Love and work where I can fulfill my passion", <br> }
+      </p>
     </div>
   </header>
 
@@ -56,8 +58,31 @@
   </div>
 
   <section id="my-work-page">
-    <h3>UNDER CONSTRUCTION</h3>
-    <img src="imgs/stewie.png" alt="">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="imgs/my-work-1.png"> <!-- random image -->
+          <div class="caption center-align content-work">
+            <h3>IDK NYC</h3>
+            <a href="http://idknyc.com"><h5 class="grey-text text-lighten-3">Click Here To Check It Out</h5></a>
+          </div>
+        </li>
+        <li>
+          <img src="imgs/my-work-2.png"> <!-- random image -->
+          <div class="caption center-align content-work">
+            <h3>VKDDS</h3>
+            <a href="http://vkdds.com"><h5 class="grey-text text-lighten-3">Click Here To Check It Out</h5></a>
+          </div>
+        </li>
+        <li>
+          <img src="imgs/my-work-3.png"> <!-- random image -->
+          <div class="caption center-align content-work">
+            <h3>Alessandro Vitalle</h3>
+            <a href="http://alessandrovitalle.com"><h5 class="grey-text text-lighten-3">Click Here To Check It Out</h5></a>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <div id="blog-par" class="parallax-container three">
@@ -149,6 +174,9 @@
     });
     $(document).ready(function(){
       $('.bxslider').bxSlider();
+    });
+    $(document).ready(function(){
+      $('.slider').slider({full_width: false});
     });
   </script>
 

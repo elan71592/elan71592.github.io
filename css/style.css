@@ -61,7 +61,7 @@ nav#nav-wrapper ul.nav li a:hover {
 
 header div.header-content {
   margin-left: 200px;
-  margin-top: 350px;
+  margin-top: 330px;
 }
 
 header div.header-content h3 {
@@ -170,7 +170,7 @@ section#about div.p-center {
   margin-top: 155px;
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
-  color: #6ed3cf;
+  color: #db4453;
   font-size: 4em;
 }
 
@@ -179,7 +179,7 @@ section#about div.p-center {
 /*Style My Work Page Content*/
 
 section#my-work-page {
-  height: 300px;
+  height: 480px;
   text-align: center;
 }
 
@@ -187,8 +187,26 @@ section#my-work-page h3 {
   text-align: center;
 }
 
-section#my-work-page img {
-  width: 200px;
+div.slider {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  box-shadow: 0px 5px 20px 5px;
+}
+
+.content-work {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.55);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  position: fixed;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 150px;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: #db4453 !important;
 }
 
 /*End Style My Work Page Content*/
@@ -390,7 +408,7 @@ footer {
 footer h3.copyright {
   float: left;
   font-family: 'Rubik', sans-serif;
-  color: #6ed3cf;
+  color: #fff;
   font-size: 1.1em;
   margin-bottom: 0;
   margin-top: 15px;
@@ -401,7 +419,7 @@ footer h3.copyright {
 footer h3.footer-name {
   float: right;
   font-family: 'Rubik', sans-serif;
-  color: #6ed3cf;
+  color: #fff;
   font-size: 1.1em;
   margin-bottom: 0;
   margin-top: -30px;
