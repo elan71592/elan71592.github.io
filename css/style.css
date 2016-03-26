@@ -306,16 +306,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 
 }
 
+section#contact-page {
+  float: left;
+  padding-bottom: 50px;
+}
+
+div#twitter-side {
+  float: left;
+}
+
 section#contact-page h3.email {
-  text-align: center;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   color: #db4453;
   font-size: 3em;
   padding-top: 270px;
+  margin-left: 240px;
 }
 
-section#contact-page div.call h3 {
+div.call h3 {
   text-align: center;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
@@ -326,11 +335,18 @@ section#contact-page div.call h3 {
   border-top: 2px solid #db4453;
   border-bottom: 40px solid #6ed3cf;
   margin-bottom: 0;
+  clear: both;
+}
+
+div#contact-form {
+  float: left;
 }
 
 section#contact-page form {
   margin: 0 auto;
-  width: 880px;
+  width: 600px;
+  margin-left: 30px;
+  margin-right: 50px;
 }
 
 #contact-form #submit-button {
