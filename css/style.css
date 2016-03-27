@@ -1,4 +1,8 @@
 /*Style Header*/
+body {
+  background-color: #fff;
+}
+
 header {
   width: 100%;
   height: 590px;
@@ -475,3 +479,211 @@ div.four {
 }
 
 /*End Style Parallax Image Heights*/
+
+@media only screen and (max-width: 1500px) {
+  nav#nav-wrapper h3 {
+    margin-top: 10px;
+    margin-left: 10%;
+    float: left;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 1.7em;
+  }
+
+  nav#nav-wrapper ul.nav {
+    float: right;
+    padding-right: 100px;
+    margin-top: -7px;
+  }
+}
+
+@media (max-width:1240px) and (min-width:1200px) {
+  section#blog-page div#section1 {
+    margin-top: -100px;
+    width: 100%;
+    border-bottom: 2px solid #db4453;
+    border-right: 0px;
+  }
+  section#blog-page div#section2 {
+    clear: both;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  section#blog-page div#section1 h3 {
+    visibility: hidden;
+  }
+  section#blog-page div#section1 h3:after {
+    content: 'HERE\'S THE LATEST FROM MY BLOG';
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #db4453;
+    font-size: 1em;
+    visibility: visible;
+    text-align: center;
+    padding-left: 30px;
+  }
+  section#blog-page {
+    width: 100%;
+    height: 420px;
+    border-bottom: 1px solid #db4453;
+  }
+  .bx-wrapper {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+    width: 800px;
+    padding-top: 25px;
+  }
+}
+
+ @media (max-width:1200px) and (min-width:1000px){
+  section#blog-page div#section1 {
+    margin-top: -100px;
+    width: 100%;
+    border-bottom: 2px solid #db4453;
+    border-right: 0px;
+  }
+  section#blog-page div#section2 {
+    clear: both;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  section#blog-page div#section1 h3 {
+    visibility: hidden;
+  }
+  section#blog-page div#section1 h3:after {
+    content: 'HERE\'S THE LATEST FROM MY BLOG';
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #db4453;
+    font-size: 1em;
+    visibility: visible;
+    text-align: center;
+    padding-left: 30px;
+  }
+  section#blog-page {
+    width: 100%;
+    height: 420px;
+    border-bottom: 1px solid #db4453;
+  }
+  .bx-wrapper {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+    width: 800px;
+    padding-top: 25px;
+  }
+}
+
+@media (max-width:1050px) and (min-width:1000px) {
+  section#about {
+    padding: 10px;
+    width: 100%;
+    height: 340px;
+    display: block;
+    background-color: #363636;
+  }
+
+  section#about div.p-center {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    color: #fff;
+  }
+}
+
+@media (max-width:1000px) and (min-width:400px) {
+  section#contact-page h3.email {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  div#twitter-side {
+    float: none;
+    text-align: center;
+  }
+
+  section#contact-page form {
+    width: 900px;
+  }
+
+
+   div.resume-download h3 {
+    display: block;
+    padding-right: 0px;
+    padding-top: 5px;
+  }
+
+  section#about {
+    padding: 10px;
+    width: 100%;
+    height: 340px;
+    display: block;
+    background-color: #363636;
+  }
+
+  section#about div.p-center {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    color: #fff;
+  }
+
+  section#blog-page div#section1 {
+    margin-top: -100px;
+    width: 100%;
+    border-bottom: 2px solid #db4453;
+    border-right: 0px;
+  }
+  section#blog-page div#section2 {
+    clear: both;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  section#blog-page div#section1 h3 {
+    visibility: hidden;
+  }
+  section#blog-page div#section1 h3:after {
+    content: 'HERE\'S THE LATEST FROM MY BLOG';
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #db4453;
+    font-size: 1em;
+    visibility: visible;
+    text-align: center;
+    margin-left: -70px;
+    padding-left: 30px;
+  }
+  section#blog-page {
+    width: 100%;
+    height: 420px;
+    border-bottom: 1px solid #db4453;
+  }
+  .bx-wrapper {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+    width: 800px;
+    padding-top: 25px;
+  }
+}
+
+@media (max-width:399px) and (min-width:300px) {
+  div.call h3 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #db4453;
+    font-size: 2.7em;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 2px solid #db4453;
+    border-bottom: 40px solid #6ed3cf;
+    margin-bottom: 0;
+    clear: both;
+  }
+}
