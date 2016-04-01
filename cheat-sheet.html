@@ -18,12 +18,8 @@
   <header id="head">
     <nav id="nav-wrapper">
       <h3><span>//</span>elan kvitko</h3>
-      <ul id="nav" class="nav">
-        <li><a href="#head">/Home</a></li>
-        <li><a href="#about-par">/About Me</a></li>
-        <li><a href="#my-work-par">/My Work</a></li>
-        <li><a href="#blog-par">/Blog</a></li>
-        <li><a href="#contact-par">/Contact</a></li>
+      <ul class="nav">
+        <li><a href="index.html">&lt;&lt; Go Back Home</a></li>
       </ul>
     </nav>
   </header>
@@ -40,6 +36,9 @@
             <li><a href="" class="andor-link prevent">AND & OR Operators</a></li>
             <li><a href="" class="orderby-link prevent">ORDER BY</a></li>
             <li><a href="" class="update-link prevent">UPDATE</a></li>
+            <li><a href="" class="like-link prevent">LIKE</a></li>
+            <li><a href="" class="wild-link prevent">WILD CARDS</a></li>
+            <li><a href="" class="create-database-link prevent">CREATE DB</a></li>
           </ul>
         </div>
       </li>
@@ -62,6 +61,20 @@
     </ul>
   </aside>
 
+
+  <section class="main-info">
+    <h3>Welcome To Elan Docs</h3>
+    <h4>Your DBC Help Guide</h4>
+
+    <p>This is a work in progress so apologies in advance if there is something you are unable to find here. If you want something added, please let me know and it will be added to the list in a timely manner. The directions are simple and listed below:</p>
+    <br><br>
+    <ol class="directions">
+      <li><p>Pick the language you want in the sidebar to the left</p></li>
+      <li><p>Choose the method you would like to see.</p></li>
+    </ol>
+  </section>
+
+
   <section class="select answer">
     <h3>SELECT</h3>
     <p>
@@ -72,6 +85,11 @@
       and
       <br>
       SELECT * FROM table_name;
+      <br><br>
+
+      Example: <br><br>
+
+      SELECT CustomerName,City FROM Customers;
     </p>
   </section>
 
@@ -156,6 +174,47 @@
       UPDATE Customers<br>
       SET ContactName='Alfred Schmidt', City='Hamburg'<br>
       WHERE CustomerName='Alfreds Futterkiste';
+    </p>
+  </section>
+
+  <section class="like answer">
+    <h3>LIKE</h3>
+    <p>
+      The LIKE operator is used to search for a specified pattern in a column.<br><br>
+      SELECT column_name(s)<br>
+      FROM table_name<br>
+      WHERE column_name LIKE pattern;<br><br>
+
+      Example:<br><br>
+      SELECT * FROM Customers<br>
+      WHERE City LIKE 's%';<br><br>
+
+      Tip: The "%" sign is used to define wildcards (missing letters) both before and after the pattern.
+    </p>
+  </section>
+
+  <section class="wild answer">
+    <h3>WILD CARDS</h3>
+    <p>
+      In SQL, wildcard characters are used with the SQL LIKE operator.<br>
+      SQL wildcards are used to search for data within a table. <br>
+      With SQL, the wildcards are:<br><br>
+
+      % &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A substitute for zero or more characters<br><br>
+      _ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A substitute for a single character<br><br>
+      [charlist] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sets and ranges of characters to match<br><br>
+      [^charlist]
+      or
+      [!charlist] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matches only a character NOT specified within the brackets
+    </p>
+  </section>
+
+  <section class="create-database answer">
+    <h3>CREATE DATABASE</h3>
+    <p>
+      The CREATE DATABASE statement is used to create a database.<br><br>
+
+      CREATE DATABASE dbname;
     </p>
   </section>
 

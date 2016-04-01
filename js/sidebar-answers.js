@@ -49,5 +49,35 @@ $(document).ready(function() {
     };
   });
 
+  $('.like-link').click(function( event ) {
+    event.preventDefault();
+    if($('.answer').hasClass('active')) {
+      $('.answer').removeClass('active')
+      $('.like').addClass('active')
+    } else {
+      $('.like').addClass('active')
+    };
+  });
+
+  $('.wild-link').click(function( event ) {
+    event.preventDefault();
+    if($('.answer').hasClass('active')) {
+      $('.answer').removeClass('active')
+      $('.wild').addClass('active')
+    } else {
+      $('.wild').addClass('active')
+    };
+  });
+
+  $('.create-database-link').click(function( event ) {
+    event.preventDefault();
+    if($('.answer').hasClass('active')) {
+      $('.answer').removeClass('active')
+      $('.create-database').addClass('active')
+    } else {
+      $('.create-database').addClass('active')
+    };
+  });
+
 
 });
