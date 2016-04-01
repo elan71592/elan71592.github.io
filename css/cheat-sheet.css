@@ -91,6 +91,7 @@ height:600px;
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
   font-size: 1.2em;
+  list-style: none;
 }
 
 .main-info p {
