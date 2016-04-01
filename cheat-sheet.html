@@ -43,6 +43,22 @@
           </ul>
         </div>
       </li>
+      <li>
+        <div class="collapsible-header">RUBY</div>
+        <div class="collapsible-body">
+          <ul class="sidebar-navi">
+            <p>Coming Soon</p>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">JAVASCRIPT</div>
+        <div class="collapsible-body">
+          <ul class="sidebar-navi">
+            <p>Coming Soon</p>
+          </ul>
+        </div>
+      </li>
     </ul>
   </aside>
 
@@ -64,50 +80,82 @@
     <p>
       SELECT column_name, column_name
       <br>
-      FROM table_name;
+      FROM table_name
       <br>
-      and
+      WHERE column_name operator value
       <br>
-      SELECT * FROM table_name;
+      <br>
+      <br>
+
+      The following operators can be used in the WHERE clause:<br><br>
+
+      = &nbsp;&nbsp;&nbsp;&nbsp; Equal<br>
+      <> &nbsp;&nbsp;&nbsp;&nbsp; Not equal. Note: In some versions of SQL this operator may be written as !=<br>
+      > &nbsp;&nbsp;&nbsp;&nbsp; Greater than<br>
+      < &nbsp;&nbsp;&nbsp;&nbsp; Less than<br>
+      >=  &nbsp;&nbsp;&nbsp;&nbsp; Greater than or equal<br>
+      <=  &nbsp;&nbsp;&nbsp;&nbsp; Less than or equal<br>
+      BETWEEN &nbsp;&nbsp;&nbsp;&nbsp; Between an inclusive range<br>
+      LIKE &nbsp;&nbsp;&nbsp;&nbsp; Search for a pattern<br>
+      IN &nbsp;&nbsp;&nbsp;&nbsp; To specify multiple possible values for a column
     </p>
   </section>
 
   <section class="andor answer">
     <h3>AND | OR Operators</h3>
     <p>
-      SELECT column_name, column_name
-      <br>
-      FROM table_name;
-      <br>
-      and
-      <br>
-      SELECT * FROM table_name;
+      The AND operator displays a record if both the first condition AND the second condition are true.<br>
+      The OR operator displays a record if either the first condition OR the second condition is true.<br><br>
+
+      The following query uses the AND operator:<br><br>
+      SELECT * FROM Customers<br>
+      WHERE Country='Germany'<br>
+      AND City='Berlin';<br><br>
+
+      The following query uses the OR operator <br><br>
+      SELECT * FROM Customers<br>
+      WHERE City='Berlin'<br>
+      OR City='München';<br><br>
+
+      You can also combine the two like so:<br><br>
+      SELECT * FROM Customers<br>
+      WHERE Country='Germany'<br>
+      AND (City='Berlin' OR City='München');
     </p>
   </section>
 
   <section class="order-by answer">
     <h3>ORDER BY</h3>
     <p>
-      SELECT column_name, column_name
-      <br>
-      FROM table_name;
-      <br>
-      and
-      <br>
-      SELECT * FROM table_name;
+      The ORDER BY keyword is used to sort the result-set by one or more columns.<br>
+      The ORDER BY keyword sorts the records in ascending order by default. To sort the records in a descending order, you can use the DESC keyword.<br><br>
+
+      SELECT column_name, column_name<br>
+      FROM table_name<br>
+      ORDER BY column_name ASC|DESC, column_name ASC|DESC;<br><br>
+
+      You can also ORDER BY a particular column name:<br><br>
+      SELECT * FROM Customers<br>
+      ORDER BY Country;<br><br>
+
+      Or by several columns:<br><br>
+      SELECT * FROM Customers<br>
+      ORDER BY Country, CustomerName;
     </p>
   </section>
 
   <section class="update answer">
     <h3>UPDATE</h3>
     <p>
-      SELECT column_name, column_name
-      <br>
-      FROM table_name;
-      <br>
-      and
-      <br>
-      SELECT * FROM table_name;
+      The UPDATE statement is used to update existing records in a table.<br><br>
+      UPDATE table_name<br>
+      SET column1=value1,column2=value2,...<br>
+      WHERE some_column=some_value;<br><br>
+
+      Example:<br><br>
+      UPDATE Customers<br>
+      SET ContactName='Alfred Schmidt', City='Hamburg'<br>
+      WHERE CustomerName='Alfreds Futterkiste';
     </p>
   </section>
 
