@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elan Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Jura:400,500,600|Rubik:400,700|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="materialize/css/materialize.css">
+  <link rel="stylesheet" href="css/cheat-sheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="js/color.js"></script>
+  <script src="js/sidebar-answers.js"></script>
+  <script src="garand-sticky/jquery.sticky.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
+</head>
+<body>
+  <header id="head">
+    <nav id="nav-wrapper">
+      <h3><span>//</span>elan kvitko</h3>
+      <ul id="nav" class="nav">
+        <li><a href="#head">/Home</a></li>
+        <li><a href="#about-par">/About Me</a></li>
+        <li><a href="#my-work-par">/My Work</a></li>
+        <li><a href="#blog-par">/Blog</a></li>
+        <li><a href="#contact-par">/Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <aside id="sidebar">
+    <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header">SQL</div>
+        <div class="collapsible-body">
+          <ul class="sidebar-navi">
+            <li><a href="" class="select-link prevent">SELECT</a></li>
+            <li><a href="" class="where-link prevent">WHERE</a></li>
+            <li><a href="" class="andor-link prevent">AND & OR Operators</a></li>
+            <li><a href="" class="orderby-link prevent">ORDER BY</a></li>
+            <li><a href="" class="update-link prevent">UPDATE</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </aside>
+
+  <section class="select answer">
+    <h3>SELECT</h3>
+    <p>
+      SELECT column_name, column_name
+      <br>
+      FROM table_name;
+      <br>
+      and
+      <br>
+      SELECT * FROM table_name;
+    </p>
+  </section>
+
+  <section class="where answer">
+    <h3>WHERE</h3>
+    <p>
+      SELECT column_name, column_name
+      <br>
+      FROM table_name;
+      <br>
+      and
+      <br>
+      SELECT * FROM table_name;
+    </p>
+  </section>
+
+  <section class="andor answer">
+    <h3>AND | OR Operators</h3>
+    <p>
+      SELECT column_name, column_name
+      <br>
+      FROM table_name;
+      <br>
+      and
+      <br>
+      SELECT * FROM table_name;
+    </p>
+  </section>
+
+  <section class="order-by answer">
+    <h3>ORDER BY</h3>
+    <p>
+      SELECT column_name, column_name
+      <br>
+      FROM table_name;
+      <br>
+      and
+      <br>
+      SELECT * FROM table_name;
+    </p>
+  </section>
+
+  <section class="update answer">
+    <h3>UPDATE</h3>
+    <p>
+      SELECT column_name, column_name
+      <br>
+      FROM table_name;
+      <br>
+      and
+      <br>
+      SELECT * FROM table_name;
+    </p>
+  </section>
+
+  <footer>
+    <h3 class="copyright">Copyright, 2016 &copy;</h3>
+
+    <div class="social-icons">
+      <a href=""><img src="imgs/social-fb-footer.png" alt="" class="fb-link"></a>
+      <a href=""><img src="imgs/social-insta-footer.png" alt="" class="insta-link"></a>
+      <a href=""><img src="imgs/social-linkedin-footer.png" alt="" class="linked"></a>
+      <a href=""><img src="imgs/social-twitter-footer.png" alt="" class="twitter"></a>
+      <a href="http://github.com/elan71592"><img src="imgs/git.png" alt="" class="git"></a>
+    </div>
+
+    <h3 class="footer-name">//elan kvitko</h3>
+  </footer>
+
+  <script>
+    $(document).ready(function(){
+      $('.collapsible').collapsible({
+        accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+      });
+    });
+  </script>
+</body>
+</html>
