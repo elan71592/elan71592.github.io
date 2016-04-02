@@ -31,6 +31,12 @@ header {
   height: 150px !important;
 }
 
+.six {
+  float: left;
+  width: 50%;
+  height: 150px !important;
+}
+
 a.center-link {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Elan Kvitko</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <link rel="stylesheet" href="../materialize/css/materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="../js/allPagesFooterColors.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
+  <script src="../garand-sticky/jquery.sticky.js"></script>
+  <script src="../materialize/js/materialize.min.js"></script>
+  <script src="../jquery.bxslider/jquery.bxslider.min.js"></script>
+</head>
+  <body>
+    <header>
+      <nav id="nav-wrapper">
+        <h3><span>//</span>elan kvitko</h3>
+        <ul class="nav">
+          <li><a href="../index.html">&lt;&lt; Go Back Home</a></li>
+          <li><a href="index.html">&lt;&lt; Go Back</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <div id="section-one">
+        <section class="title">
+          <h3>Test Driven Development</h3>
+          <h4>April 2nd, 2016</h4>
+        </section>
+
+        <div class="content">
+          <p>
+            Test Driven Development often abbreviated as TDD is a style of software development.Kent Beck, an American software engineer is often credited with the discovery of TDD. This methodology is extremely useful in the process of software development. There are 5 key steps that a developer follows when using this process. These steps are:<br><br>
+
+            Step 1: Add tests<br>
+            Step 2: Run the tests to get them failing<br>
+            Step 3: Code some<br>
+            Step 4: Run the tests an see them pass<br>
+            Step 5: Refactor<br><br>
+
+            There's many reasons as to why this kind of development has become widely adopted by many software companies. For instance, when using TDD, a developer must write the tests before doing any kind of developing. This is important because it forces the developer to really understand the concepts of what the software being developed is and how the user should feel when using it. Also, by implementing TDD, developers often save a lot of time. While there is usually more code involved due to the actual tests being written, the overall time of the project can be significantly shortened because the developer has already written the tests which test for how the program should be functioning. In short, TDD is very useful, important, and most likely every developer will come across this spectacular method of programming.
+          </p>
+        </div>
+      </div>
+
+      <aside id="sidebar">
+        <h3 class="other-posts">Check Out Some Other Posts!</h3>
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Git & Version Control</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// CSS Concepts</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Arrays & Hashes</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Enumerable Methods</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// Ruby Classes</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">web</i>// JavaScript - Ruby</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+        </ul>
+
+        <h3 class="follow">Follow Me</h3>
+      </aside>
+    </main>
+
+    <footer>
+      <h3 class="copyright">Copyright, 2016 &copy;</h3>
+
+      <div class="social-icons">
+        <a href=""><img src="../imgs/social-fb-footer.png" alt="" class="fb-link"></a>
+        <a href=""><img src="../imgs/social-insta-footer.png" alt="" class="insta-link"></a>
+        <a href=""><img src="../imgs/social-linkedin-footer.png" alt="" class="linked"></a>
+        <a href=""><img src="../imgs/social-twitter-footer.png" alt="" class="twitter"></a>
+        <a href="http://github.com/elan71592"><img src="../imgs/git.png" alt="" class="git"></a>
+      </div>
+
+      <h3 class="footer-name">//elan kvitko</h3>
+    </footer>
+
+
+    <script>
+      $(document).ready(function(){
+        $("#nav-wrapper").sticky({topSpacing:0});
+        });
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $('.collapsible').collapsible({
+          accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+      });
+    </script>
+  </body>
+</html>
