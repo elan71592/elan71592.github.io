@@ -7,34 +7,8 @@ header {
   width: 100%;
 }
 
-.two {
-  float: left;
-  width: 50%;
-  height: 150px !important;
-}
-
-.three {
-  float: left;
-  width: 50%;
-  height: 150px !important;
-}
-
-.four {
-  float: left;
-  width: 50%;
-  height: 150px !important;
-}
-
-.five {
-  float: left;
-  width: 50%;
-  height: 150px !important;
-}
-
-.six {
-  float: left;
-  width: 50%;
-  height: 150px !important;
+#container {
+  margin-left: 15%;
 }
 
 a.center-link {
@@ -54,4 +28,22 @@ a.center-link:hover {
 
 footer {
   clear: both;
+}
+
+.even {
+  width: 40%;
+  height: 150px !important;
+  margin: 20px;
+  float: left;
+}
+
+.odd {
+  width: 40%;
+  height: 150px !important;
+  margin-top: 40px;
+  float: left;
+}
+
+.last {
+  margin-bottom: 50px;
 }
